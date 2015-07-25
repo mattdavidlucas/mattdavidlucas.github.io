@@ -1,0 +1,50 @@
+body { 
+	color: #000; 
+	font-family: 'PT Mono', Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, a {
+	font-family: 'Abril Fatface', Helvetica, Arial, sans-serif;
+}
+
+.home {
+	h1 {
+		font-size: 1.6em;
+		margin-bottom: 0.4em;
+	}
+
+	h2 {
+		font-size: 1.2em;
+		margin-bottom: 0.5em;
+	}
+
+	p {
+		font-size: 1em;
+		line-height: 1.2em;
+	}
+}
+
+@media only screen and (min-width: 1475px) {
+	.home {
+		h1, h2 {
+			display: inline-block;
+			font-size: 2.6em;
+			margin-bottom: 0.4em;
+		}
+
+		h2 {
+			&:before {
+				content: ' / ';
+			}
+		}
+
+		p {
+			font-size: 1.4em;
+			line-height: 1.4em;
+		}
+	}
+
+	.social-links {
+		li { font-size: 1.4em; }
+	}
+}

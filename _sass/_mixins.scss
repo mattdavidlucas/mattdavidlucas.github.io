@@ -1,0 +1,17 @@
+@mixin rounded-corners($radius) {
+	-webkit-border-radius: $radius;
+	   -moz-border-radius: $radius;
+	    -ms-border-radius: $radius;
+	      -o-border-radus: $radius;
+	        border-radius: $radius;
+}
+
+@mixin drop-shadow($x, $y, $b, $hex) {
+	-webkit-box-shadow: $x $y $b $hex;
+	   -moz-box-shadow: $x $y $b $hex;
+	        box-shadow: $x $y $b $hex;
+}
+
+@function fluid-div($div-size, $container-size) {
+	@return ($div-size / $container-size) * 100%;
+}
