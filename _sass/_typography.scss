@@ -3,11 +3,53 @@ body {
 	font-family: 'PT Mono', Helvetica, Arial, sans-serif;
 }
 
-h1, h2, h3, a {
+h1, h2, h3, h4 {
 	font-family: 'Abril Fatface', Helvetica, Arial, sans-serif;
 }
 
-.home {
+p {
+	font-size: 1em;
+	line-height: 1.2em;
+}
+
+@media only screen and (min-width: 960px) {
+	p { line-height: 1.4em; }
+}
+
+// Header for inner pages
+.site-header {
+	h2 {
+		font-size: 1.8em;
+		text-align: center;
+		a {
+			color: #FFF;
+			text-decoration: none;
+			&:visited { color: #FFF;}
+		}
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.site-header {
+		h2 {
+			font-size: 1.2em;
+			margin: 0.9em 0 0 1em;
+
+			a { 
+				color: #000; 
+				&:visited { color: #000; }
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1475px) {
+	.site-header {
+		.social-links li { font-size: 1em; }
+	}
+}
+
+.module_content--home {
 	h1 {
 		font-size: 1.6em;
 		margin-bottom: 0.4em;
@@ -17,15 +59,10 @@ h1, h2, h3, a {
 		font-size: 1.2em;
 		margin-bottom: 0.5em;
 	}
-
-	p {
-		font-size: 1em;
-		line-height: 1.2em;
-	}
 }
 
 @media only screen and (min-width: 1475px) {
-	.home {
+	.module_content--home {
 		h1, h2 {
 			display: inline-block;
 			font-size: 2.6em;
@@ -48,3 +85,123 @@ h1, h2, h3, a {
 		li { font-size: 1.4em; }
 	}
 }
+
+
+// Portfolio Cards
+#portfolio {
+	h3 {
+		border-bottom: 2px solid #000;
+		font-size: 1.2em;
+		margin-bottom: 0.8em;
+		padding-bottom: 0.5em;
+	}
+}
+
+.portfolio_card {
+	h4 {
+		font-size: 1.2em;
+		margin-bottom: 0.8em;
+	}
+
+	p {
+		margin-bottom: 1em;
+	}
+
+	a { 
+		font-family: 'Abril Fatface', Helvetica, Arial, sans-serif;
+		&:hover { color: $hoverColor; }
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	#portfolio {
+		h3 {
+			font-size: 1.4em;
+		}		
+	}
+}
+
+@media only screen and (min-width: 1475px) {
+	#portfolio {
+		h3 {
+			font-size: 2em;
+		}		
+	}
+}
+
+
+// Single Portfolio Item
+.post-title {
+	border-bottom: 3px solid #000;
+	font-size: 1.6em;
+	margin-bottom: 1.2em;
+	padding-bottom: 0.5em;
+}
+
+#portfolio_single {
+	h3 {
+		border-bottom: 2px solid #000;
+		font-size: 1.2em;
+		margin: 1.8em 0 0.8em;
+		padding-bottom: 0.5em;
+	}
+	
+	h4 {
+		font-size: 1.1em;
+		margin: 1.4em 0 0.5em 0;
+	}
+
+	p {
+		margin-bottom: 1.2em;
+	}
+}
+
+figcaption {
+	color: #777;
+	font-size: 0.7em;
+	font-style: italic;
+	line-height: 1.2em;
+	margin-top: 1em;
+}
+
+@media only screen and (min-width: 960px) {
+	.post-title {
+		border-bottom: none;
+		font-size: 1.8em;
+		text-align: center;			
+	}
+}
+
+@media only screen and (min-width: 1475px) {
+	.post-title {
+		font-size: 2.2em;
+	}
+
+	#portfolio_single {
+		h3 { font-size: 1.4em; }
+	}
+
+	figcaption { font-size: 0.8em; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

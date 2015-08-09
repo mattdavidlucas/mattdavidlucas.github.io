@@ -1,23 +1,33 @@
 ---
-layout: home-page
+layout: default
 ---
+<div class="wrapper">
+  <section id="site-intro" class="module cf">
+    <img src="/img/los-tigre.jpg" alt="Los Tigre">
+    
+    <article class="module_content--home">
+      <header class="cf">
+        <h1>Matt Lucas</h1>
+        <h2>Developer &amp; Digital Marketer</h2>    
+      </header>
 
-<section id="site-intro" class="module cf">
-  <img src="/img/los-tigre.jpg" alt="Los Tigre">
-  
-  <article class="module_content">
-    <header class="cf">
-      <h1>Matt Lucas</h1>
-      <h2>Developer &amp; Digital Marketer</h2>    
+      <p>Hi, I&rsquo;m Matt. I&rsquo;m currently a developer in San Francisco at Teradata Interactive. My day-to-day includes building email and landing page templates to be used in digital marketing campaigns, as well as engineering email nurturing campaigns for clients such as Intel.</p>
+
+      <footer class="cf">
+        <ul class="social-links cf">
+          <li><a href="https://github.com/mattdavidlucas/mattdavidlucas.github.io" target="_blank" title="GitHub">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/mattdavidlucas" target="_blank" title="LinkedIn">LinkedIn</a></li>
+        </ul>
+      </footer>
+    </article>
+  </section><!-- /#site-intro -->
+
+  <section id="portfolio" class="module cf">
+    <header>
+      <h3>Selected Work</h3>
     </header>
 
-    <p>Hi, I&rsquo;m Matt. I&rsquo;m currently a developer in San Francisco at Teradata Interactive. My day-to-day includes building email and landing page templates to be used in digital marketing campaigns, as well as engineering email nurturing campaigns for clients such as Intel.</p>
+    {% include portfolio-cards.html %}
+  </section><!-- /#portfolio -->  
+</div>
 
-    <footer class="cf">
-    	<ul class="social-links cf">
-    		<li><a href="https://github.com/mattdavidlucas/mattdavidlucas.github.io" target="_blank" title="GitHub">GitHub</a></li>
-    		<li><a href="https://www.linkedin.com/in/mattdavidlucas" target="_blank" title="LinkedIn">LinkedIn</a></li>
-    	</ul>
-    </footer>
-  </article>
-</section><!-- /#site-intro -->
