@@ -61,11 +61,17 @@ p {
 	}
 }
 
+@media only screen and (min-width: 960px) {
+	.module_content--home {
+		p { font-size: 1.2em; }
+	}
+}
+
 @media only screen and (min-width: 1475px) {
 	.module_content--home {
 		h1, h2 {
 			display: inline-block;
-			font-size: 2.6em;
+			font-size: 2.4em;
 			margin-bottom: 0.4em;
 		}
 
@@ -99,7 +105,7 @@ p {
 
 .portfolio_card {
 	h4 {
-		font-size: 1.2em;
+		font-size: 1.1em;
 		margin-bottom: 0.8em;
 	}
 
@@ -109,6 +115,7 @@ p {
 	}
 
 	a { 
+		font-size: 0.9em;
 		font-family: 'Abril Fatface', Helvetica, Arial, sans-serif;
 		&:hover { color: $hoverColor; }
 	}
@@ -125,7 +132,7 @@ p {
 @media only screen and (min-width: 1475px) {
 	#portfolio {
 		h3 {
-			font-size: 2em;
+			font-size: 1.8em;
 		}		
 	}
 }
