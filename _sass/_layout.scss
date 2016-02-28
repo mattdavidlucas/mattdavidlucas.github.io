@@ -86,6 +86,7 @@ a {
 
 #site-intro {
 	img {
+		display: none;
 		@include rounded-corners(50%);
 		margin: 30px auto;
 		max-width: 200px;
@@ -93,7 +94,7 @@ a {
 }
 
 .social-links {
-	margin-top: 1em;
+	margin-top: 30px;
 
 	a {
 		@extend %cta;
@@ -104,10 +105,15 @@ a {
 	}
 }
 
+.social-links {
+	a { border-top: none; }
+}
+
 @media only screen and (min-width: 760px) {
 	.social-links {
 		border-top: 5px solid #BF5947;
 		display: inline-block;
+		margin-top: 1em;
 		padding-top: 5px;
 
 		li {
@@ -144,6 +150,10 @@ a {
 }
 
 @media only screen and (min-width: 960px) {
+	#site-intro {
+		img { display: block; }
+	}
+
 	.wrapper {
 		padding: 7% 0 15%;
 		width: 80%;
@@ -201,11 +211,12 @@ a {
 
 // Portfolio Cards Section
 #portfolio {
-	padding: 30px 0;
+	padding: 70px 0 30px;
 }
 
 .portfolio_card {
 	margin-bottom: 40px;
+	max-width: 400px;
 
 	img {
 		border: 1px solid #e1e1e1;
