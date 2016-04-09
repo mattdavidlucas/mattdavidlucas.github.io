@@ -5,6 +5,26 @@ a {
 .wrapper {
 	margin: 0 auto;
 	padding: 5% 10%;
+
+	@media only screen and (min-width: 960px) {
+		width: 80%;
+	}
+
+	@media only screen and (min-width: 1475px) {
+		max-width: 1300px; 
+	}
+}
+
+div.wrapper {
+	@media only screen and (min-width: 960px) {
+		padding: 7% 0;
+	}
+}
+
+footer.wrapper {
+	@media only screen and (min-width: 960px) {
+		padding: 0 0 5%;
+	}
 }
 
 .cta {
@@ -21,197 +41,133 @@ a {
 	}
 }
 
+// Menus + Nav
+.menu {
+	border-top: 1px solid #FFF;
+	margin: 1.8em 0 0;
+	padding: 0.8em 0 0;
+}
+
+.site-header {
+	.menu {
+		margin-top: 1em;
+	}
+}
+
+.horizontal-links {
+	li {
+		color: #FFF;
+		float: left;
+		font-family: $headlineFont;
+
+		&:after {
+			content: '/';
+			display: inline-block;
+			padding: 0 5px 0 10px;
+		}
+
+		&:last-child {
+			&:after { 
+				content: none; 
+				padding-right: 0;
+			}
+		}
+	}
+
+	a {
+		color: #FFF;
+		display: inline-block;
+		text-decoration: none;
+
+		&:visited { color: #FFF; }
+
+		&:hover { color: #FFF; }
+	}
+}
+
+.site-header {
+	.horizontal-links {
+		margin: 0 auto;
+		width: 160px;
+	}
+}
+
+article {
+	.horizontal-links {
+		margin-top: 2em;
+		
+		li { 
+			color: #000;
+			@media only screen and (min-width: 960px) {
+				font-size: 1.2em;
+			}
+		}
+
+		a {
+			color: #000;
+			&:visited { color: #000; }
+			&:hover { color: #000; }
+		}
+	}
+}
+
 // Header for inner pages
 .site-header {
 	background-color: #000;
 	margin-bottom: 20px;
 	padding: 20px;
-
-	ul, .logo { display: none; }
 }
 
-@media only screen and (min-width: 960px) {
-	
+@media only screen and (min-width: 760px) {
 	.site-header {
-		background-color: #e1e1e1;
-		height: 50px;
-		margin-bottom: 0;
-		padding: 0;
-
-		h2, li, .logo {
+		h1, li {
 			float: left;
 		}
-		
-		ul, .logo { display: block; }
 
-		ul {
+		.menu, ul {
 			float: right;
 		}
 
-		.social-links {
-			border-top: none;
+		.menu {
+			border: none;
+			margin: 0;
 			padding: 0;
 		}
-	}
 
-	.logo {
-		height: auto;
-		max-width: 50px;
+		.horizontal-links {
+			margin: 0;
+			width: inherit;
+		}
 	}
-
 }
-
 
 // Footer
 .site-footer {
-	padding: 0 0 30px;
-
 	small {
 		display: block;
 		font-size: 0.8em;
-		text-align: center;
 	}
 
 	span { font-size: 1.2em; }
 }
 
-
-// Home Page
-.module_content--home {
-	header {
-		border-bottom: 5px solid #000;
-		margin-bottom: 1em;
-	}	
-}
-
-#site-intro {
-	img {
-		display: none;
-		@include rounded-corners(50%);
-		margin: 30px auto;
-		max-width: 200px;
-	}	
-}
-
-.social-links {
-	margin-top: 30px;
-
-	a {
-		@extend %cta;
-
-		&:visited {
-			color: #FFF;
-		}
-	}
-}
-
-.social-links {
-	a { border-top: none; }
-}
-
-@media only screen and (min-width: 760px) {
-	.social-links {
-		border-top: 5px solid #BF5947;
-		display: inline-block;
-		margin-top: 1em;
-		padding-top: 5px;
-
-		li {
-			float: left;
-
-			&:after {
-				content: '/';
-				display: inline-block;
-				padding: 0 5px;
-			}
-
-			&:last-child {
-				&:after { content: ''; }
-			}
-		}
-
-		a {
-			background: transparent;
-			border-top: none;
-			color: #000;
-			display: inline-block;
-			margin: 0;
-			padding: 0;
-
-			&:visited {
-				color: #000;
-			}
-
-			&:hover {
-				color: #BF5947;
-			}
-		}
-	}
-}
-
 @media only screen and (min-width: 960px) {
-	#site-intro {
-		img { display: block; }
-	}
-
-	.wrapper {
-		padding: 7% 0 15%;
-		width: 80%;
-	}
-
 	.site-header + .wrapper { padding-top: 5%; }
-
-	.site-header {
-		.social-links { padding-right: 20px; }
-	}
-
-	.module_content--home {
-		float: left;
-	}
-
-	.module_content--home {
-		margin: 1% 0 0 5%;
-		width: 70%;
-	}
-
-	#site-intro {
-		img {
-			float: left;
-			margin: 0;
-			max-width: 250px;
-			width: 25%;
-		}
-	}
 }
 
 @media only screen and (min-width: 1475px) {
-	.social-links {
-		padding-top: 10px;
-	}
-
-	.wrapper { 
-		padding: 7% 0;
-		max-width: 1500px; 
-	}
-
 	.site-header + .wrapper { padding-top: 7%; }
-
-	// .module_content--home {
-	// 	margin: 3% 0 0 5%;
-	// }
-
-	// #site-intro {
-	// 	img {
-	// 		max-width: none;
-	// 	}		
-	// }
 }
 
-
-
 // Portfolio Cards Section
-#portfolio {
-	padding: 70px 0 30px;
+.portfolio-page {
+	#portfolio {
+		padding-top: 5em;
+
+		@media only screen and (min-width: 1500px) {
+			padding-top: 10em;
+		}
+	}
 }
 
 .portfolio_card {
@@ -225,10 +181,6 @@ a {
 }
 
 @media only screen and (min-width: 960px) {
-	#portfolio {
-		padding-top: 8%;
-	}
-
 	.portfolio_card {
 		float: left;
 		min-height: 230px;
@@ -262,8 +214,6 @@ a {
 	}
 }
 
-
-
 // Single Portfolio Item
 #portfolio_single {
 	ul {
@@ -278,7 +228,7 @@ a {
 }
 
 figure {
-	margin: 0 0 1.6em 0;
+	margin: 3em 0 1.6em 0;
 	padding: 0;
 
 	img {
@@ -299,10 +249,6 @@ figure {
 	#portfolio_single {
 		margin: 0 auto;
 		max-width: 960px;
-	}
-
-	figure {
-		margin: 3em 0;
 	}
 }
 

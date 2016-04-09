@@ -1,0 +1,46 @@
+.home {
+	background: #000;
+	color: #FFF;
+	font-family: $headlineFont;
+	padding: 5% 0;
+	
+	.wrapper {
+		max-width: 1200px;
+	}
+
+	p {
+		line-height: normal;
+	}
+
+	.horizontal-links li {
+		a { 
+			color: #FFF; 
+			
+			&:visited { color: #FFF; }
+			&:hover { color: #FFF; }
+		}
+	}
+}
+
+.home p,
+.home .horizontal-links li {
+	@media only screen and (min-width: 320px) {
+		font-size: $small-headline;
+	}
+
+	@media only screen and (min-width: 414px) {
+		font-size: $medium-headline;
+	}
+
+	@media only screen and (min-width: 768px) {
+		font-size: $table-headline;
+	}
+
+	@media only screen and (min-width: 960px) {
+		font-size: $desktop-headline;
+	}
+}
+
+.lighten {
+	color: lighten(#555, 20%);
+}

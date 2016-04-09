@@ -1,6 +1,5 @@
 .DS_Store
 Gemfile.lock
 .sass-cache
-scratch.txt
 _site
-psd
+_psd

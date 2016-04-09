@@ -3,12 +3,12 @@
 
   {% include head.html %}
 
-  <body>
-
-  {{ content }}
+  <body class="page">
+	{% include site-navigation.html %}
 	
-  {% include footer.html %}
+	{{ content }}
 
+	{% include footer.html %}
   </body>
 
 </html>

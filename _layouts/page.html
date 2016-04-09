@@ -2,18 +2,16 @@
 layout: default
 ---
 
-{% include site-navigation.html %}
-
-<div class="wrapper">
-	<h1 class="post-title">{{ page.title }}</h1>
+<div class="wrapper portfolio-page">
+	<h2 class="post-title">{{ page.title }}</h2>
 
 	{{ content }}
 
 	<section id="portfolio" class="module cf">
-    <header>
-      <h3>Additional Work</h3>
-    </header>
+		<header>
+		  <h3 class="section-title">Additional Work</h3>
+		</header>
 
-    {% include portfolio-cards.html %}
-  </section><!-- /#portfolio -->  
-</div>
+		{% include portfolio-cards.html %}
+  	</section><!-- /#portfolio -->  
+</div><!-- /.wrapper -->
