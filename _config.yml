@@ -8,3 +8,4 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 markdown: kramdown
 sass:
   style: compressed
+env: production
