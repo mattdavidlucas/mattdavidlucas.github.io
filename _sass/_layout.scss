@@ -1,3 +1,13 @@
+@media only screen and (min-width: 960px) {
+	html, body { min-height: 100%; }
+
+	.page {
+		background: url('../img/page-background.png') bottom no-repeat;
+		background-size: 100%;
+	}	
+}
+
+
 a {
 	color: #000;
 }
