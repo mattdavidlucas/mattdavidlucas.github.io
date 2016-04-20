@@ -1,6 +1,6 @@
 body { 
 	color: #000; 
-	font-family: 'PT Mono', Helvetica, Arial, sans-serif;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4 {
@@ -37,14 +37,22 @@ p {
 		font-size: 1.2em;
 		line-height: normal;
 		margin-bottom: 0.4em;
+
+		a {
+			text-decoration: none;
+			&:visited { color: #000; }
+		}
 	}
 
 	footer a { 
 		border-top: 1px solid #000;
+		color: #777;
 		display: inline-block;
+		font-family: 'Oswald', Helvetica, sans-serif;
 		font-size: 0.9em;
 		padding-top: 0.6em;
 		text-decoration: none;
+		text-transform: uppercase;
 
 		&:hover { color: $hoverColor; }
 	}
