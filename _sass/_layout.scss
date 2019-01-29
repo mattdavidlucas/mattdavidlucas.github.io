@@ -1,3 +1,6 @@
+.page {
+	background-color: #e6e6e6;
+}
 a {
 	color: #000;
 }
@@ -17,7 +20,7 @@ a {
 
 div.wrapper {
 	@media only screen and (min-width: 960px) {
-		padding: 7% 0;
+		padding: 5% 0;
 	}
 }
 
@@ -156,7 +159,7 @@ article {
 }
 
 @media only screen and (min-width: 1475px) {
-	.site-header + .wrapper { padding-top: 7%; }
+	.site-header + .wrapper { padding-top: 5%; }
 }
 
 // Portfolio Cards Section
@@ -171,13 +174,18 @@ article {
 }
 
 .portfolio_card {
+	background-color: #FFF;
+	border-radius: 5px;
+	box-shadow: 1px 0px 10px rgba(0,0,0,0.1);
 	margin: 40px auto;
+	overflow: hidden;
 	max-width: 400px;
 
 	img {
-		border: 1px solid #e1e1e1;
 		margin-bottom: 20px;
 	}
+	
+	div { padding: 5% 5% 10% 5%; }
 
 	header, footer { text-align: center; }
 }
@@ -185,15 +193,14 @@ article {
 @media only screen and (min-width: 960px) {
 	.portfolio_card {
 		float: left;
-		min-height: 230px;
 		width: fluid-div(320,1000);
+
+		div { min-height: 136px; }
 		
 		&:nth-child(3n-3) { 
 			margin-left: fluid-div(20,1000);
 			margin-right: fluid-div(20,1000);
 		}
-
-		header, footer { text-align: left; }
 	}
 }
 
@@ -242,7 +249,8 @@ figure {
 	padding: 0;
 
 	img {
-		border: 1px solid #a1a1a1;
+		border-radius: 5px;
+		box-shadow: 1px 0px 10px rgba(0,0,0,0.1);
 	}
 
 	img.no-border { border: none; }
