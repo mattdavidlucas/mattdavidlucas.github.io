@@ -1,46 +1,72 @@
+html {
+	height: 100%;
+}
+
 .home {
-	background: #000;
-	color: #FFF;
-	font-family: $headlineFont;
-	padding: 5% 0;
+	background-color: #000;
+	height: 100%;
 	
-	.wrapper {
-		max-width: 1200px;
+	@media only screen and (min-width: 1200px) {
+		/* Photo by rawpixel on Unsplash */
+		background-image: url('/img/home-background.jpg');
+		background-position: right;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	div {
+		height: 100%;
+		position: relative;
+	}
+}
+
+.site-intro {
+	margin: 2.6em;
+	position: absolute;
+	top: 40%;
+	transform: translateY(-50%);
+
+	@media only screen and (min-width: 768px) {
+		max-width: 760px;
+	}
+
+	@media only screen and (min-width: 1200px) {
+		border-bottom: 40px solid #FFF;
+	}
+
+	h1 {
+		color: #FFF;
+		font-family: $headlineFont;
+		font-size: 1.6em;
+		line-height: 1.4em;
+		margin-bottom: 1em;
+
+		@media only screen and (min-width: 768px) {
+			font-size: 3em;
+			line-height: normal;
+		}
 	}
 
 	p {
-		line-height: normal;
-	}
+		color: #FFF;
+		font-family: $bodyFont;
+		font-size: 1em;
+		line-height: 1.6em;
+		
+		
 
-	.horizontal-links li {
+		@media only screen and (min-width: 768px) {
+			font-size: 1.6em;
+		}
+
+		@media only screen and (min-width: 1200px) {
+			&:last-child { margin-bottom: 2.4em }
+		}
+
 		a { 
-			color: #FFF; 
-			
+			color: #FFF;
 			&:visited { color: #FFF; }
 			&:hover { color: #FFF; }
 		}
 	}
-}
-
-.home p,
-.home .horizontal-links li {
-	@media only screen and (min-width: 320px) {
-		font-size: $small-headline;
-	}
-
-	@media only screen and (min-width: 414px) {
-		font-size: $medium-headline;
-	}
-
-	@media only screen and (min-width: 768px) {
-		font-size: $table-headline;
-	}
-
-	@media only screen and (min-width: 960px) {
-		font-size: $desktop-headline;
-	}
-}
-
-.lighten {
-	color: lighten(#555, 20%);
 }
