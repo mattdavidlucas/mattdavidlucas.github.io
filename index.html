@@ -1,13 +1,18 @@
 ---
 layout: home
 ---
-<div>
-  <section class="site-intro">
-    <h1>Hi, I&rsquo;m Matt Lucas.</h1>
+<div class="wrapper">
+	<section class="site-intro">
+	  <h1>Hi, I&rsquo;m Matt Lucas. I&rsquo;m an HTML email developer and designer at LendingTree in Charlotte, NC.</h1>
+	</section><!-- /.site-intro -->
 
-    <p>I&rsquo;m an HTML email developer and designer at LendingTree in Charlotte, North Carolina.</p>
+	<section id="portfolio" class="module cf">
+		<header>
+			<h3 class="section-title">Selected Work</h3>
+		</header>
 
-    <p>Feel free to check out some of <a href="/work" title="view work samples">my work samples</a>. Or if you&rsquo;d like to reach out, <a href="mailto:mattdavidlucas@gmail.com">send me an email</a>.</p>
-  </section><!-- /.site-intro -->
+		{% include portfolio-cards.html %}
+	</section><!-- /#portfolio -->
 </div>
+
 
