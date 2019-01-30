@@ -165,10 +165,10 @@ article {
 // Portfolio Cards Section
 .portfolio-page {
 	#portfolio {
-		padding-top: 5em;
+		padding-top: 3em;
 
 		@media only screen and (min-width: 1500px) {
-			padding-top: 10em;
+			padding-top: 5em;
 		}
 	}
 }
@@ -177,7 +177,7 @@ article {
 	background-color: #FFF;
 	border-radius: 5px;
 	box-shadow: 1px 0px 10px rgba(0,0,0,0.1);
-	margin: 40px auto;
+	margin: 30px auto;
 	overflow: hidden;
 	max-width: 400px;
 
@@ -234,12 +234,12 @@ article {
 
 	li { 
 		font-size: 1em;
-		line-height: 1.4em;
+		line-height: 1.6em;
 		margin-bottom: 0.2em; 
 
 		@media only screen and (min-width: 960px) {
-			font-size: 1.1em;
-			line-height: 1.5em;
+			font-size: 1.2em;
+			line-height: 1.6em;
 		}		
 	}
 }
@@ -262,17 +262,28 @@ figure {
 	img.no-border { border: none; }
 }
 
+.details {
+	background-color: #FFF;
+	box-shadow: 1px 0px 10px rgba(0,0,0,0.1);
+	padding: 10%;
+
+	@media only screen and (min-width: 960px) {
+		margin: 4em 0 2em 0;
+		padding: 6%;
+	}
+}
+
 @media only screen and (min-width: 960px) {
 	#portfolio_single {
 		margin: 0 auto;
-		max-width: 960px;
+		// max-width: 960px;
 	}
 }
 
 @media only screen and (min-width: 1475px) {
 	#portfolio_single {
 		margin: 0 auto;
-		max-width: 960px;
+		// max-width: 960px;
 	}
 }
 
