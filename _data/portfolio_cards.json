@@ -1,0 +1,51 @@
+{
+	"cards": [
+		{
+			"card_id": "lendingtree",
+			"page_name": "lendingtree-email-templates",
+			"thumb": "matt-david-lucas-thumbnail-lendingtree.png",
+			"alt": "LendingTree Email Templates",
+			"title": "LendingTree Email<br /> Templates",
+		},
+
+		{
+			"card_id": "pubnub",
+			"page_name": "pubnub-email-templates",
+			"thumb": "matt-david-lucas-thumbnail-pubnub-email-templates.png",
+			"alt": "PubNub Email Templates",
+			"title": "PubNub Email<br /> Templates",
+		},
+
+		{
+			"card_id": "pierry",
+			"page_name": "pierry-software-emails",
+			"thumb": "matt-david-lucas-thumbnail-pierry-emails.png",
+			"alt": "Pierry Software",
+			"title": "Pierry Software<br /> Emails",
+		},
+
+		{
+			"card_id": "iot",
+			"page_name": "intel-developer-campaign",
+			"thumb": "matt-david-lucas-thumbnail-intel-dev-campaign.png",
+			"alt": "Intel Developer Campaign",
+			"title": "Intel Developer<br /> Campaign",
+		},
+
+		{
+			"card_id": "hertz-poc",
+			"page_name": "hertz-poc",
+			"thumb": "matt-david-lucas-thumbnail-hertz-poc.png",
+			"alt": "Hertz Bon Voyage POC",
+			"title": "Hertz Bon Voyage<br /> POC",
+		},
+
+		{
+			"card_id": "etl",
+			"page_name": "engineering-training-library",
+			"thumb": "matt-david-lucas-thumbnail-eng-library.png",
+			"alt": "Engineering Training Library",
+			"title": "Engineering Training<br /> Library",
+		},
+	]
+}
