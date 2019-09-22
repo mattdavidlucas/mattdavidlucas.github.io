@@ -21,15 +21,15 @@ $small-headline: 1.4em;
 $medium-headline: 1.8em;
 $table-headline: 2.2em;
 $desktop-headline: 2.8em;
-$headlineFont: 'Abril Fatface', Helvetica, Arial, sans-serif;
-$bodyFont: 'Lato', Helvetica, Arial, sans-serif;
+$headlineFont: 'Roboto Slab', Helvetica, Arial, sans-serif;
+$bodyFont: 'Roboto', Helvetica, Arial, sans-serif;
 
 %cta {
 	background: #000;
 	border-top: 10px solid $hoverColor;
 	color: #FFF;
 	display: block;
-	font-family: 'Abril Fatface', Helvetica, Arial, sans-serif;
+	font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
 	font-size: 1.1em;
 	margin-bottom: 2px; 
 	padding: 15px;
