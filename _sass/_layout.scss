@@ -204,10 +204,13 @@ article {
 @media only screen and (min-width: 960px) {
 	.portfolio_card {
 		float: left;
+		transition: transform .2s cubic-bezier(.25,.1,.25,1);
 		width: fluid-div(320,1000);
-
-		// div { min-height: 136px; }
 		
+		&:hover {
+			transform: translateY(-.35em);
+		}
+
 		&:nth-child(3n-3) { 
 			margin-left: fluid-div(20,1000);
 			margin-right: fluid-div(20,1000);
