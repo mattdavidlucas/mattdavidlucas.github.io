@@ -157,6 +157,8 @@ article {
 		a {
 			color: #fff;
 			text-decoration: none;
+			&:visited { color: #FFF; }
+			&:hover { text-decoration: underline; }
 		}
 	}
 

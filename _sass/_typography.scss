@@ -33,6 +33,7 @@ strong {
 			color: #FFF;
 			text-decoration: none;
 			&:visited { color: #FFF;}
+			&:hover { color: $hoverColor; }
 		}
 	}
 	
