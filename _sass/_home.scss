@@ -15,7 +15,6 @@
 }
 
 .site-intro {
-	border-bottom: 10px solid #000;
 	margin: 2.6em 0;
 
 	@media only screen and (min-width: 768px) {
@@ -27,7 +26,7 @@
 		font-family: $headlineFont;
 		font-size: 1.6em;
 		line-height: 1.4em;
-		margin-bottom: 3em;
+		margin-bottom: 0;
 
 		@media only screen and (min-width: 960px) {
 			font-size: 2.2em;
@@ -60,4 +59,8 @@
 			&:hover { color: #000; }
 		}
 	}
+}
+
+.container_portfolio {
+	background-color: #FFF;
 }
