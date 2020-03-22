@@ -273,11 +273,13 @@ figure {
 
 .details {
 	background-color: #FFF;
+	border-radius: 5px;
 	box-shadow: 1px 0px 10px rgba(0,0,0,0.1);
+	margin: 3em 0;
 	padding: 10%;
 
 	@media only screen and (min-width: 960px) {
-		margin: 4em 0 2em 0;
+		margin: 3em 0 6em 0;
 		padding: 6%;
 	}
 }
