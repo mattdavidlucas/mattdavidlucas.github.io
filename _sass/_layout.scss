@@ -146,9 +146,18 @@ article {
 
 // Footer
 .site-footer {
+	background-color: #000;
+	
 	small {
+		color: #fff;
 		display: block;
 		font-size: 0.8em;
+		line-height: 2em;
+
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
 	}
 
 	span { font-size: 1.2em; }
