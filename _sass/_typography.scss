@@ -25,6 +25,9 @@ strong {
 // Header for inner pages
 .site-header {
 	h1 {
+		color: #FFF;
+		font-weight: 700;
+		line-height: 1.4em;
 		text-align: center;
 		a {
 			color: #FFF;
@@ -32,8 +35,16 @@ strong {
 			&:visited { color: #FFF;}
 		}
 	}
-
+	
 	h1, li { font-size: $small-headline; }
+}
+
+.job-title { 
+	font-weight: 400; 
+	display: block;
+	@media only screen and (min-width: 760px) {
+		display: inline;
+	}
 }
 
 .portfolio_card {
