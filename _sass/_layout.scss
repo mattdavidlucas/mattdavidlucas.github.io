@@ -39,7 +39,7 @@ footer.wrapper {
 		max-width: 250px;
 
 		&:hover {
-			border-top-color: darken($hoverColor, 10%);
+			background-color: darken($hoverColor, 10%);
 		}
 	}
 }
