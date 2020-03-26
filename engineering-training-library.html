@@ -2,7 +2,10 @@
 layout: page
 title: Engineering Training Library
 permalink: /work/engineering-training-library/
+details: "<strong>Role:</strong> Front-End Development, Design and Content Creation|<strong>Languages Used:</strong> HTML, Sass, jQuery, and PHP|<strong>Project Start Date:</strong> 2014|<strong>Project Completion Date:</strong> 2015"
 ---
+
+{% assign project_details = page.details | split: "|" %}
 
 <article id="portfolio_single" class="etl">
 	<p>This internal resource was created as a way to quickly onboard new developers and account managers through short, easily consumable videos, to the Ozone Online way of digital marketing. To maintain the Ozone Online brand, the library was branded with colors, fonts and background treatments taken from the agency&rsquo;s user facing site. For added punch, I created vintage-inspired library checkout cards for the home page that pop-up on hover.</p>
@@ -13,8 +16,12 @@ permalink: /work/engineering-training-library/
 	
 	<section class="details">
 		<h4>Details</h4>
-
-		<p><strong>Role:</strong> Front-End Development, Design and Content Creation; <strong>Languages Used:</strong> HTML, Sass, jQuery, and PHP; <strong>Project Start Date:</strong> 2014; <strong>Project Completion Date:</strong> 2015.</p>
+		
+		<ul>
+			{% for detail in project_details %}
+			<li>{{detail}}</li>
+			{% endfor %}
+		</ul>
 	</section>
 	
 	<figure>
