@@ -2,7 +2,10 @@
 layout: page
 title: Hertz Bon Voyage POC
 permalink: /work/hertz-poc/
+details: "<strong>Role:</strong> HTML Email Development and Campaign Architecture Build|<strong>Languages Used:</strong> HTML and Java Expression Language/JSP|<strong>Marketing Automation Platform:</strong> Digital Marketing Center|<strong>Strategy:</strong> Brian Smith|<strong>Solution Architect:</strong> Kamran Kanany|<strong>Python Scripting:</strong> Nick Silva|<strong>Project Start Date:</strong> March 2015|<strong>Project Completion Date:</strong> April 2015"
 ---
+
+{% assign project_details = page.details | split: "|" %}
 
 <article id="portfolio_single" class="hertz-poc">
 	<p>The Hertz Bon Voyage campaign was a proof-of-concept project showcasing the power of Teradata&rsquo;s Digital Marketing Center, as well as Teradata Interactive&rsquo;s agency services.</p>
@@ -21,8 +24,12 @@ permalink: /work/hertz-poc/
 
 	<section class="details">
 		<h4>Details</h4>
-
-		<p><strong>Role:</strong> HTML Email Development and Campaign Architecture Build; <strong>Languages Used:</strong> HTML and Java Expression Language/JSP; <strong>Marketing Automation Platform:</strong> Digital Marketing Center; <strong>Strategy:</strong> Brian Smith; <strong>Solution Architect:</strong> Kamran Kanany; <strong>Python Scripting:</strong> Nick Silva; <strong>Project Start Date:</strong> March 2015; <strong>Project Completion Date:</strong> April 2015.</p>
+		
+		<ul>
+			{% for detail in project_details %}
+			<li>{{detail}}</li>
+			{% endfor %}
+		</ul>
 	</section>
 
 	<figure>
