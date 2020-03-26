@@ -2,7 +2,10 @@
 layout: page
 title: Intel Developer Campaign
 permalink: /work/intel-developer-campaign/
+details: "<strong>Role:</strong> HTML Email and Front-End Development, and Campaign Architecture within Eloqua|<strong>Languages Used:</strong> HTML, Sass, JavaScript, and jQuery; PHP and jQuery for the Asset Builder|<strong>Marketing Automation Platform:</strong> Eloqua|<strong>Strategy:</strong> Brian Smith|<strong>Project Start Date:</strong> 2014|<strong>Project Completion Date:</strong> 2016"
 ---
+
+{% assign project_details = page.details | split: "|" %}
 
 <article id="portfolio_single" class="iot">
 	<p>The Intel Developer Campaign is a lead nurturing program, affectionately nicknamed the Tree of Life. The idea behind it first sprouted to fruition at Ozone Online, and then became more fully realized at Teradata Interactive. At its most basic, the idea behind the campaign is to send contacts down a general interest path, and based on data captured during a form submission, the contact can then be routed to a more specific path that is tailored to their industry.</p>
@@ -11,8 +14,12 @@ permalink: /work/intel-developer-campaign/
 	
 	<section class="details">
 		<h4>Details</h4>
-
-		<p><strong>Role:</strong> HTML Email and Front-End Development, and Campaign Architecture within Eloqua; <strong>Languages Used:</strong> HTML, Sass, JavaScript, and jQuery; PHP and jQuery for the Asset Builder; <strong>Marketing Automation Platform:</strong> Eloqua; <strong>Strategy:</strong> Brian Smith; <strong>Project Start Date:</strong> 2014; <strong>Project Completion Date:</strong> 2016.</p>
+		
+		<ul>
+			{% for detail in project_details %}
+			<li>{{detail}}</li>
+			{% endfor %}
+		</ul>
 	</section>
 
 	<h3>Asset Production</h3>
