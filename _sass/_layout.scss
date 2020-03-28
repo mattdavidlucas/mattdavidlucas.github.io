@@ -325,6 +325,11 @@ figure {
 		box-shadow: 1px 0px 10px rgba(0,0,0,0.1);
 	}
 
+	&.fw img {
+		border-radius: 0;
+		box-shadow: none;
+	}
+
 	.img-single {
 		margin: 0 auto;
 		max-width: 570px;
@@ -334,6 +339,16 @@ figure {
 	img.no-border { border: none; }
 }
 
+.lt { background-color: #f2f2f2; }
+
+.pn { background-color: #f4f4f4 }
+
+.fw {
+	border-radius: 5px;
+	box-shadow: 1px 0px 10px rgba(0,0,0,0.1);
+}
+
+.pt { padding-top: 1em; }
 
 @media only screen and (min-width: 960px) {
 	#portfolio_single {
