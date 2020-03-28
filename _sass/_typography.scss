@@ -54,10 +54,11 @@ strong {
 		font-size: 1em;
 		font-weight: 700;
 		line-height: 1.6em;
-		margin: 1.4em 0;
 		text-align: center;
 		
 		a {
+			display: block;
+			padding: 1.4em 0;
 			text-decoration: none;
 			&:visited { color: #000; }
 		}
