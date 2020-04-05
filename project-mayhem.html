@@ -1,12 +1,25 @@
 ---
 layout: page
-title: Project Mayhem
-permalink: /work/project-mayhem/
+title: Teradata DMP Demo
+permalink: /work/teradata-demo/
+details: "<strong>Role:</strong> HTML Email and Front-End Development|<strong>Languages Used:</strong> HTML, Sass and PHP|<strong>API&rsquo;s:</strong> Digital Marketing Center|<strong>Marketing Automation Platform:</strong> Digital Marketing Center|<strong>Art Direction:</strong> Carolyn Blevins|<strong>Strategy &amp; Technical Direction:</strong> Ali Naimi|<strong>Project Start Date:</strong> November 2015|<strong>Project Completion Date:</strong> January 2016 / Templates created April 2015"
 ---
 
-<article id="portfolio_single" class="project-mayhem">
-	<p>Project Mayhem was a proof-of-concept project demonstrating how an imaginary website, Runners.com, might use a Data Management Platform (DMP), in conjunction with a marketing automation platform, to deliver targeted content to an anonymous to known user.</p>
+{% assign project_details = page.details | split: "|" %}
+
+<article id="portfolio_single" class="td-demo">
+	<p>This Teradata demo, entitled &ldquo;Project Mayhem&rdquo;, was a P.O.C. demonstrating how an imaginary website, Runners.com, might use a Data Management Platform (DMP), in conjunction with a marketing automation platform, to deliver targeted content to an anonymous or known user. My role on the project was to code and develop all of the digital marketing assets used in the demo.</p>
 	
+	<section class="details">
+		<h4>Details</h4>
+
+		<ul>
+			{% for detail in project_details %}
+			<li>{{detail}}</li>
+			{% endfor %}
+		</ul>
+	</section>
+
 	<figure>
 		<img src="/img/project-mayhem/matt-david-lucas-project-mayhem-emails.jpg" alt="screenshot">
 		<figcaption>Sample emails for fake brands.</figcaption>
@@ -26,18 +39,4 @@ permalink: /work/project-mayhem/
 		<img src="/img/project-mayhem/matt-david-lucas-project-mayhem-titan-homepage.jpg" alt="screenshot">
 		<figcaption>Fake Titan Energy brand home page.</figcaption>
 	</figure>
-  
-	<h3>Details</h3>
-
-	<ul>
-		<li>Role: HTML Email and Front-End Development</li>
-		<li>Languages Used: HTML, Sass and PHP</li>
-		<li>API&rsquo;s: Digital Marketing Center</li>
-		<li>Marketing Automation Platform: Digital Marketing Center</li>	
-		<li>Art Direction: Carolyn Blevins</li>
-		<li>Strategy &amp; Technical Direction: Ali Naimi</li>
-		<li>Project Start Date: November 2015</li>
-		<li>Project Completion Date: January 2016 / Templates created April 2015</li>
-	</ul>
-
 </article>

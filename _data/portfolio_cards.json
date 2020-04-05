@@ -41,6 +41,14 @@
 		},
 
 		{
+			"card_id": "td-demo",
+			"page_name": "teradata-demo",
+			"thumb": "matt-david-lucas-thumbnail-project-mayhem.jpg",
+			"alt": "Teradata DMP Demo",
+			"title": "Teradata DMP Demo",
+		},
+		
+		{
 			"card_id": "hertz-poc",
 			"page_name": "hertz-poc",
 			"thumb": "matt-david-lucas-thumbnail-hertz-poc.png",
