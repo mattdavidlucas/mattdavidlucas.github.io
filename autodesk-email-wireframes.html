@@ -1,12 +1,25 @@
 ---
 layout: page
-title: Autodesk Email Wireframe
-permalink: /work/autodesk-email-wireframe/
+title: Autodesk Email System
+permalink: /work/autodesk-email-system/
+details: "<strong>Role:</strong> HTML Email and Front-End Development|<strong>Languages Used:</strong> HTML and CSS for the emails; HTML, Sass and jQuery for the Email Style Guide|<strong>Marketing Automation Platform:</strong> Marketo|<strong>Art Direction/Design:</strong> Carolyn Blevins|<strong>Project Start Date:</strong> September 2015|<strong>Project Completion Date:</strong> November 2015"
 ---
 
+{% assign project_details = page.details | split: "|" %}
+
 <article id="portfolio_single" class="adsk-wires">
-	<p>This project was conceived as a way to help Autodesk marketers unify and simplify their email campaigns and nurture programs. By using a starter, or &ldquo;wireframe&rdquo; template, email messages being deployed from Marketo could stay consistent with and match Autodesk brand guidelines. In addition to this, there could be a quicker turnaround for campaigns because less time was spent coding new email templates from scratch.</p>
+	<p>This project was conceived as a way to help Autodesk marketers unify their email campaigns and nurture programs. By using a lightweight email design system, messages being deployed from Marketo could stay consistent with Autodesk brand guidelines. In addition to this, there could be a quicker turnaround for campaigns because less time was spent coding new email templates from scratch.</p>
 	
+	<section class="details">
+		<h4>Details</h4>
+
+		<ul>
+			{% for detail in project_details %}
+			<li>{{detail}}</li>
+			{% endfor %}
+		</ul>
+	</section>
+
 	<figure>
 		<img src="/img/adsk-wires/matt-david-lucas-adsk-wireframe.png" alt="screenshot">
 		<figcaption>Email modules contained in the wireframe.</figcaption>
@@ -28,16 +41,4 @@ permalink: /work/autodesk-email-wireframe/
 
 		<figcaption>Sample email with content.</figcaption>
 	</figure>
-  
-	<h3>Details</h3>
-
-	<ul>
-		<li>Role: HTML Email and Front-End Development</li>
-		<li>Languages Used: HTML and CSS for the email wireframe; HTML, Sass and jQuery for the Email Style Guide.</li>
-		<li>Marketing Automation Platform: Marketo</li>
-		<li>Art Direction/Design: Carolyn Blevins</li>
-		<li>Project Start Date: September 2015</li>
-		<li>Project Completion Date: November 2015</li>
-	</ul>
-
 </article>
