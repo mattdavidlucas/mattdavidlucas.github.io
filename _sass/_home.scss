@@ -1,5 +1,5 @@
 .home {
-	background-color: #e6e6e6;
+	background-color: #000;
 
 	h3 {
 		text-align: center;
@@ -17,12 +17,8 @@
 .site-intro {
 	margin: 2.6em 0;
 
-	@media only screen and (min-width: 768px) {
-		// max-width: 760px;
-	}
-
 	h1 {
-		color: #000;
+		color: #FFF;
 		font-family: $headlineFont;
 		font-size: 1.6em;
 		line-height: 1.4em;
@@ -37,7 +33,6 @@
 		@media only screen and (min-width: 1500px) {
 			font-size: 3em;
 			line-height: 1.4em;
-			margin-bottom: 2em;
 		}
 	}
 
