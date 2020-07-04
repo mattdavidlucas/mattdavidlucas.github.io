@@ -298,6 +298,15 @@ article {
 					}
 				}
 			}
+
+			a {
+				text-decoration: none;
+				&:visited { color: #000; }
+				&:hover { 
+					color: $hoverColor; 
+					text-decoration: underline;
+				}
+			}
 		}
 
 		strong {
