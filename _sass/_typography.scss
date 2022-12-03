@@ -30,9 +30,9 @@ strong {
 		line-height: 1.4em;
 		text-align: center;
 		a {
-			color: #FFF;
+			color: $hoverColor;
 			text-decoration: none;
-			&:visited { color: #FFF;}
+			&:visited { color: $hoverColor;}
 			&:hover { color: $hoverColor; }
 		}
 	}
