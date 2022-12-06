@@ -1,18 +1,36 @@
 ---
 layout: home
+details: "<strong>Skills:</strong> Responsive HTML Email Development, Marketing Automation, Email Scripting Languages, HTML & CSS, Handlebars.js & Liquid, Git & GitHub, Litmus, Figma, Sketch & Adobe CC|<strong>Ares of Focus:</strong> Email Development, Marketing Operations, Email Design Systems, Process &amp; Technical Documentation|<strong>Marketing Automation Platforms:</strong> Marketo, Salesforce Marketing Cloud, Blueshift, SparkPost, Pardot, Eloqua|"
 ---
+
+{% assign project_details = page.details | split: "|" %}
+
 <section class="container_site-intro">
 	<div class="wrapper">
 		<section class="site-intro">
 		  <h1>Matt Lucas</h1>
 
-		  <h2>Email Development, Marketing Operations &amp; Email Design Systems.</h2>
+		  <h2>Email Development, Marketing Operations &amp; Email Design Systems</h2>
 		</section><!-- /.site-intro -->
 	</div>
 </section>
 
 <section class="container_portfolio">
 	<div class="wrapper">
+		<section class="details">
+			<p>Hi there 👋 My name is Matt, and I'm a multidisciplinary marketing professional based in Charlotte, North Carolina.</p>
+
+			<p>Below are some of my skills, areas of focus, and work samples. If you find something and have any questions about it, feel free to email me at <a href="mailto:mattdavidlucas@gmail.com">mattdavidlucas@gmail.com</a>, or DM me on the Email Geeks Slack community. I'm @mattdavidlucas.</p>
+			
+			<ul>
+				{% for detail in project_details %}
+				<li>{{detail}}</li>
+				{% endfor %}
+			</ul>
+
+			<a href="https://github.com/mattdavidlucas/email-samples" class="cta" target="_blank">View Code Samples</a>
+		</section>
+
 		<section id="portfolio" class="module cf">
 			<header>
 				<h3 class="section-title">Work Samples</h3>
