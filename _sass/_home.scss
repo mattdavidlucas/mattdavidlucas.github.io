@@ -37,8 +37,25 @@
 	}
 }
 
+.container_site-intro {
+	background-image: url('/img/thumbs/matt-david-lucas-background-graphic-v2.png');
+	background-position: 20% 47%;
+	background-repeat: no-repeat;
+	background-size: 200%;
+	@media only screen and (min-width: 960px) {
+		background-position: -72% 63%;
+		background-size: 87%;
+	}
+}
+
 .site-intro {
 	margin: 2.6em 0;
+
+	.cta { box-shadow: 1px 0px 10px rgba(0,0,0,0.4) }
+
+	@media only screen and (min-width: 600px) {
+		nav { display: flex; }
+	}
 
 	h1, h2 {
 		font-family: $headlineFont;
@@ -60,6 +77,7 @@
 
 	h1 { 
 		color: $hoverColor;
+		text-shadow: 1px 0px 10px rgba(0,0,0,.4);
 	}
 
 	h2 { 
