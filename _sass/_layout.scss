@@ -121,12 +121,6 @@ article {
 	background-color: #000;
 	margin-bottom: 20px;
 	padding: 20px;
-	@media only screen and (min-width: 960px) {
-		background-image: url('/img/thumbs/matt-david-lucas-background-graphic.png');
-		background-position: 242% 94%;
-		background-repeat: no-repeat;
-		background-size: 79%;
-	}
 }
 
 @media only screen and (min-width: 760px) {
@@ -155,14 +149,6 @@ article {
 // Footer
 .site-footer {
 	background-color: #000;
-	background-image: url('/img/thumbs/matt-david-lucas-background-graphic-v2.png');
-	background-position: 30% 45%;
-	background-size: 210%;
-	@media only screen and (min-width: 960px) {
-		background-position: 187% 46%;
-		background-repeat: no-repeat;
-		background-size: 80%;
-	}
 	
 	small {
 		color: #fff;
