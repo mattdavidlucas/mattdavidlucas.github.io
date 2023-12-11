@@ -1,0 +1,64 @@
+body {
+    margin: 2em;
+}
+
+.container {
+    @media only screen and (min-width: 760px) {
+        max-width: 1400px;
+        width: 95%;
+    }
+}
+
+// Typography
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 3em;
+    font-style: italic;
+
+    @media only screen and (min-width: 760px) {
+        font-size: 5em;
+    }
+}
+
+figcaption {
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+// Loop Cards Container
+.loops {
+    @media only screen and (min-width: 760px) {
+        .loop-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+}
+
+// Loop Cards
+figure {
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+	box-shadow: 1px 0px 10px rgba(0,0,0,0.1);
+    margin: 0 0 1.4em 0;
+    padding: 8em 0 0 0;
+
+    @media only screen and (min-width: 760px) {
+        flex: 0 1 fluid-div(320,1000);
+    }
+
+    div {
+        background-color: #FFF;
+        padding: 1.4em;
+    }
+
+    audio {
+        width: 100%;
+    }
+}

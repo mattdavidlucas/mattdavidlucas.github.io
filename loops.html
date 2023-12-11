@@ -1,0 +1,26 @@
+---
+layout: loops_layout
+permalink: /loops/
+---
+
+<section class="container">
+    <header>
+        <h1>Loops</h1>
+    </header>
+    
+    <section class="loop-cards">
+        {% include loops-cards.html %}
+    </section>
+</section>
+
+<script>
+document.addEventListener('play', function(e) {
+    var loops = document.getElementsByTagName('audio');
+
+    for (var i = 0, len = loops.length; i < len; i++) {
+        if (loops[i] != e.target) {
+            loops[i].pause();
+        }
+    }
+}, true);
+</script>

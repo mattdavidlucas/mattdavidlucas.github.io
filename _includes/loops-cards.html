@@ -1,0 +1,8 @@
+{% for loop in site.data.loops_cards.loops %}
+<figure style="background-image: url(/img/thumbs/{{loop.bg_img}});">
+    <div>
+        <figcaption>{{loop.title}}</figcaption>
+        <audio class="player" controls preload="none" src="{{loop.src}}" type="audio/mp3"></audio>
+    </div>
+</figure>
+{% endfor %}
