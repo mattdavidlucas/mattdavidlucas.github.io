@@ -25,6 +25,30 @@ h1 {
     }
 }
 
+header {
+    p {
+        position: relative;
+        @media only screen and (min-width: 760px) {
+            font-size: 1.4em;
+            margin-bottom: 2em;
+            width: 60%;
+        }
+
+        &::before {
+            background-color: #000;
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 4px;
+            top: -20px;
+
+            @media only screen and (min-width: 760px) {
+                top: -30px;
+            }
+        }
+    }
+}
+
 figcaption {
     font-weight: 400;
     margin-bottom: 1em;
@@ -52,6 +76,7 @@ figure {
     @media only screen and (min-width: 760px) {
         flex: 0 1 fluid-div(320,1000);
         margin-right: 1%;
+        margin-bottom: 3em;
     }
 
     div {
