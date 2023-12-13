@@ -1,4 +1,5 @@
 body {
+    background-color: #f2eabc;
     margin: 2em;
 }
 
@@ -34,8 +35,8 @@ figcaption {
     @media only screen and (min-width: 760px) {
         .loop-cards {
             display: flex;
+            flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-between;
         }
     }
 }
@@ -44,13 +45,13 @@ figcaption {
 figure {
     background-size: cover;
     background-position: center;
-    border-radius: 5px;
-	box-shadow: 1px 0px 10px rgba(0,0,0,0.1);
+    border: 1px solid #000;
     margin: 0 0 1.4em 0;
     padding: 8em 0 0 0;
 
     @media only screen and (min-width: 760px) {
         flex: 0 1 fluid-div(320,1000);
+        margin-right: 1%;
     }
 
     div {
