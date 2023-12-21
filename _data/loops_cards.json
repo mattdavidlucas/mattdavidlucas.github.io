@@ -1,6 +1,18 @@
 {
 	"loops": [
 		{
+			"src": "https://mdlloops.s3.us-east-2.amazonaws.com/12172023_02_loop.mp3",
+			"title": "12.17.2023_02",
+            "bg_img": "12172023_02.jpg"
+		},
+
+		{
+			"src": "https://mdlloops.s3.us-east-2.amazonaws.com/12172023_01_loop.mp3",
+			"title": "12.17.2023_01",
+            "bg_img": "12172023_01.jpg"
+		},
+
+		{
 			"src": "https://mdlloops.s3.us-east-2.amazonaws.com/12082023_loop.mp3",
 			"title": "12.08.2023",
             "bg_img": "12082023.png"
