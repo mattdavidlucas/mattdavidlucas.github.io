@@ -95,4 +95,31 @@
 
 .container_portfolio {
 	background-color: #e6e6e6;
+	padding-bottom: 3em;
 }
+
+// Special Projects
+.spec-project {
+	background-color: #f2eabc;
+	border-radius: 5px;
+	box-shadow: 1px 0px 10px rgba(0,0,0,0.1);
+	padding: 2em;
+
+	@media only screen and (min-width: 760px) {
+		padding: 3em;
+	}
+}
+
+.black { 
+	background-color: #000;
+	border: 1px solid #000;
+	margin: 0 auto;
+	&:hover {
+		background-color: #f2eabc;
+		color: #000;
+	}
+
+	@media only screen and (min-width: 760px) {
+		margin: 0;
+	}
+ }

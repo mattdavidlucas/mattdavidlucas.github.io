@@ -7,7 +7,7 @@ a {
 
 .wrapper {
 	margin: 0 auto;
-	padding: 5% 10%;
+	padding: 3em 10% 0;
 
 	@media only screen and (min-width: 960px) {
 		width: 80%;
@@ -20,7 +20,7 @@ a {
 
 div.wrapper {
 	@media only screen and (min-width: 960px) {
-		padding: 5% 0;
+		padding: 3em 0 0 0;
 	}
 }
 
@@ -149,6 +149,7 @@ article {
 // Footer
 .site-footer {
 	background-color: #000;
+	padding: 3em 0;
 	
 	small {
 		color: #fff;
@@ -165,6 +166,11 @@ article {
 	}
 
 	span { font-size: 1.2em; }
+}
+
+.site-footer > .wrapper {
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 @media only screen and (min-width: 960px) {
@@ -190,6 +196,7 @@ article {
 	#portfolio {
 		// background-color: #FFF;
 		padding-top: 2em;
+		padding-bottom: 2em;
 
 		@media only screen and (min-width: 1500px) {
 			padding-top: 0;
@@ -201,7 +208,7 @@ article {
 	background-color: #FFF;
 	border-radius: 5px;
 	box-shadow: 1px 0px 10px rgba(0,0,0,0.1);
-	margin: 30px auto;
+	margin: 0 auto 30px;
 	overflow: hidden;
 	max-width: 400px;
 	

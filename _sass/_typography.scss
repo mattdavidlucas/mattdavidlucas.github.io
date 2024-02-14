@@ -80,12 +80,11 @@ strong {
 
 .section-title {
 	font-size: $small-headline;
-	margin-bottom: 0;
+	margin-bottom: 1.4em;
 	text-align: center;
 
 	@media only screen and (min-width: 960px) {
 		font-size: $medium-headline;
-		margin-bottom: 0.6em;
 		text-align: left;
 	}
 }
@@ -158,4 +157,29 @@ figcaption {
 	}
 
 	figcaption { font-size: 0.8em; }
+}
+
+// Special Projects
+.sp-loops {
+	text-align: center;
+	@media only screen and (min-width: 760px) {
+		text-align: left;
+	}
+
+	h4, a { font-family: 'Poppins', sans-serif; }
+
+	h4 {
+		font-size: 3em;
+		font-style: italic;
+		font-weight: 900;
+		margin-bottom: 0.5em;
+
+		@media only screen and (min-width: 760px) {
+			font-size: 5em;
+		}
+	}
+
+	a {
+		text-decoration: none;
+	}
 }
