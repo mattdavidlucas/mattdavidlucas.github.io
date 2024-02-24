@@ -24,6 +24,11 @@ div.wrapper {
 	}
 }
 
+.container_site-intro > div.wrapper { 
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
 footer.wrapper {
 	@media only screen and (min-width: 960px) {
 		padding: 0 0 5%;

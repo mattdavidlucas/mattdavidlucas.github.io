@@ -1,6 +1,12 @@
 {
 	"loops": [
 		{
+			"src": "https://mdlloops.s3.us-east-2.amazonaws.com/01292024_02_loop.mp3",
+			"title": "01.29.2024_02",
+            "bg_img": "01292024_02.jpg"
+		},
+
+		{
 			"src": "https://mdlloops.s3.us-east-2.amazonaws.com/12172023_02_loop.mp3",
 			"title": "12.17.2023_02",
             "bg_img": "12172023_02.jpg"
