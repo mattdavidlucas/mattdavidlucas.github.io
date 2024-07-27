@@ -1,7 +1,0 @@
-{% for card in site.data.portfolio_cards.cards %}
-<article id="{{card.card_id}}" class="portfolio_card">
-  <a href="/work/{{card.page_name}}/"><img src="/img/thumbs/{{card.thumb}}" alt="{{card.alt}}"></a>
-  
-  <h4><a href="/work/{{card.page_name}}/" title="View Emails">{{card.title}}</a></h4>
-</article><!-- /.portfolio_card -->
-{% endfor %}
