@@ -1,8 +1,18 @@
+// Start New CSS
 .logo {
   margin: 1rem 2rem;
   max-width: 220px;
   width: 100%;
 }
+
+@media only screen and (max-width: 740px) {
+  .current-sketch { 
+    overflow: scroll;
+
+    img { width: 1200px; }
+  }
+}
+// End New CSS
 .home {
 	background-color: #FFF;
 
