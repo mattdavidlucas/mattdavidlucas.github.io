@@ -1,140 +1,83 @@
-// Start New CSS
+.home {
+  header {
+    border-bottom: 1px solid black;
+    padding: 1rem 2rem;
+  }
+}
+
 .logo {
-  margin: 1rem 2rem;
   max-width: 220px;
   width: 100%;
 }
 
-@media only screen and (max-width: 740px) {
-  .current-sketch { 
-    overflow: scroll;
+// Nav
+nav {
+  background-color: white;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3em;
+  font-weight: 700;
+  padding: 2rem;
+  position: absolute;
 
-    img { width: 1200px; }
+  li {
+    margin-bottom: 1em;
+
+    &:last-child { margin-bottom: 0; }
+  }
+
+  a {
+    color: black;
+    position: relative;
+    text-decoration: none;
+
+    &:visited {
+      @extend a;
+    }
+
+    &::before {
+      border-radius: 90px;
+      content: '';
+      display: inline-block;
+      position: relative;
+      width: 20px;
+      height: 20px;
+      bottom: -2px;
+      left: 0;
+      margin-right: 0.4em;
+    }
+
+    &:hover {
+      &::before {
+        transition: transform .3s;
+        transform: translateY(-.75em);
+      }
+    }
+  }
+
+  .loops_nav {
+    &::before {
+      background-color: $loopsColor;
+    }
+  }
+
+  .old_drawings_nav {
+    &::before {
+      background-color: $oldDrawingsColor;
+    }
   }
 }
-// End New CSS
-.home {
-	background-color: #FFF;
 
-	h3 {
-		text-align: center;
+// Sketches
+.current-sketch {
+  overflow: scroll;
+  position: relative;
 
-		@media only screen and (min-width: 960px) {
-			text-align: left;
-		}
-	}
-
-	p {
-		font-size: 1em;
-		line-height: 1.6em;
-		margin-bottom: 1.2em;
-
-		@media only screen and (min-width: 960px) {
-			font-size: 1.2em;
-			line-height: 1.6em;
-		}
-	}
-
-	#portfolio {
-		margin-top: 3em;
-	}
-
-	.details {
-		li {
-			@media only screen and (min-width: 1080px) {
-				&:after {
-					content: "";
-					display: inline;
-					padding: 0;
-				}
-			}
-		}
-	}
+  img { 
+    width: 1200px; 
+    @media only screen and (min-width: 760px) {
+     width: 100%; 
+    }
+  }
 }
-
-.site-intro {
-	margin: 2.6em 0;
-
-	.cta { box-shadow: 1px 0px 10px rgba(0,0,0,0.4) }
-
-	@media only screen and (min-width: 600px) {
-		nav { display: flex; }
-	}
-
-	h1, h2 {
-		font-family: $headlineFont;
-		font-size: 1.6em;
-		line-height: 1.4em;
-		margin-bottom: 0;
-
-		@media only screen and (min-width: 960px) {
-			font-size: 2.2em;
-			line-height: 1.6em;
-			max-width: 760px;
-		}
-
-		@media only screen and (min-width: 1500px) {
-			font-size: 3em;
-			line-height: 1.4em;
-		}
-	}
-
-	h1 { 
-		color: $hoverColor;
-		text-shadow: 1px 0px 10px rgba(0,0,0,.4);
-	}
-
-	h2 { 
-		color: #FFF;
-	}
-
-	p {
-		color: #000;
-		font-family: $bodyFont;
-		font-size: 1.1em;
-		line-height: 1.8em;
-
-		&:last-child { margin-bottom: 2.4em }
-		
-		@media only screen and (min-width: 1100px) {
-			font-size: 1.6em;
-		}
-
-		a { 
-			color: #000;
-			&:visited { color: #000; }
-			&:hover { color: #000; }
-		}
-	}
-}
-
-.container_portfolio {
-	background-color: #e6e6e6;
-	padding-bottom: 3em;
-}
-
-// Special Projects
-.spec-project {
-	background-color: #f2eabc;
-	border-radius: 5px;
-	box-shadow: 1px 0px 10px rgba(0,0,0,0.1);
-	padding: 2em;
-
-	@media only screen and (min-width: 760px) {
-		padding: 3em;
-	}
-}
-
-.black { 
-	background-color: #000;
-	border: 1px solid #000;
-	margin: 0 auto;
-	&:hover {
-		background-color: #f2eabc;
-		color: #000;
-	}
-
-	@media only screen and (min-width: 760px) {
-		margin: 0;
-	}
- }

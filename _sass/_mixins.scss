@@ -24,6 +24,10 @@ $desktop-headline: 2.8em;
 $headlineFont: 'Roboto Slab', Helvetica, Arial, sans-serif;
 $bodyFont: 'Roboto', Helvetica, Arial, sans-serif;
 
+// New vars
+$loopsColor: #f2eabc;
+$oldDrawingsColor: #abc6b4; 
+
 %cta {
 	background-color: $hoverColor;
 	border-radius: 90px;
