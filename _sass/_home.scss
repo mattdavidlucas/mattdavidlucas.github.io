@@ -1,7 +1,11 @@
 .home {
   header {
+    background-color: white;
     border-bottom: 1px solid black;
     padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
   }
 }
 
@@ -18,8 +22,10 @@ nav {
   font-family: 'Poppins', sans-serif;
   font-size: 1.3em;
   font-weight: 700;
+  left: 0;
   padding: 2rem;
-  position: absolute;
+  position: fixed;
+  top: 85px;
 
   li {
     margin-bottom: 1em;
@@ -73,11 +79,23 @@ nav {
 .current-sketch {
   overflow: scroll;
   position: relative;
+  top: 85px;
+}
 
-  img { 
-    width: 1200px; 
-    @media only screen and (min-width: 760px) {
-     width: 100%; 
-    }
+.full, .half {
+  width: 1200px;
+}
+
+.half {
+  @media only screen and (min-width: 760px) {
+    display: inline-block;
+    float: left;
+    width: 50%; 
+  }
+}
+
+.full {
+  @media only screen and (min-width: 760px) {
+    width: 100%; 
   }
 }
