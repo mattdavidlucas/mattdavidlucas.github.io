@@ -1,63 +1,148 @@
 {
 	"loops": [
+    {
+			"src": "sp_06042025_03.mp3",
+			"title": "06.04.2025_03",
+      "bg_color": "#737f68"
+		},
+
+    {
+			"src": "sp_06042025_02.mp3",
+			"title": "06.04.2025_02",
+      "bg_color": "#6a7460"
+		},
+
+    {
+			"src": "sp_06042025_01.mp3",
+			"title": "06.04.2025_01",
+      "bg_color": "#546055"
+		},
+
+    {
+			"src": "sp_04202025_01.mp3",
+			"title": "04.20.2025",
+      "bg_color": "#6f755c"
+		},
+
+    {
+			"src": "sp_04052025_01.mp3",
+			"title": "04.05.2025",
+      "bg_color": "#74705d"
+		},
+
+    {
+			"src": "sp_03082025_04.mp3",
+			"title": "03.08.2025_04",
+      "bg_color": "#6b6a5d"
+		},
+
+    {
+			"src": "sp_03082025_01.mp3",
+			"title": "03.08.2025_01",
+      "bg_color": "#848372"
+		},
+  
+    {
+			"src": "sp_02232025_04.mp3",
+			"title": "02.23.2025",
+      "bg_color": "#737c68"
+		},
+
+    {
+			"src": "po_01182025_02.mp3",
+			"title": "01.18.2025_02",
+      "bg_color": "#9eb8a0"
+		},
+    
+
+    {
+			"src": "po_01182025_01.mp3",
+			"title": "01.18.2025_01",
+      "bg_color": "#60a2a2"
+		},
+
+    {
+			"src": "po_01142025_02.mp3",
+			"title": "01.14.2025",
+      "bg_color": "#7ea29f"
+		},
+
+    {
+			"src": "09072024_loop.mp3",
+			"title": "09.07.2024",
+      "bg_color": "#4a8487"
+		},
+
+    {
+			"src": "08252024_loop.mp3",
+			"title": "08.25.2024",
+      "bg_color": "#067182"
+		},
+
+    {
+			"src": "08182024_loop.mp3",
+			"title": "08.18.2024",
+      "bg_color": "#52839b"
+		},
+
 		{
-			"src": "https://mdlloops.s3.us-east-2.amazonaws.com/02252024_loop.mp3",
+			"src": "02252024_loop.mp3",
 			"title": "02.25.2024",
-            "bg_img": "02252024.jpg"
+      "bg_color": "#4f82a7"
 		},
 
 		{
-			"src": "https://mdlloops.s3.us-east-2.amazonaws.com/01292024_02_loop.mp3",
+			"src": "01292024_02_loop.mp3",
 			"title": "01.29.2024_02",
-            "bg_img": "01292024_02.jpg"
+      "bg_color": "#8ea7b5"
 		},
 
 		{
-			"src": "https://mdlloops.s3.us-east-2.amazonaws.com/12172023_02_loop.mp3",
+			"src": "12172023_02_loop.mp3",
 			"title": "12.17.2023_02",
-            "bg_img": "12172023_02.jpg"
+      "bg_color": "#7c99ae"
 		},
 
 		{
-			"src": "https://mdlloops.s3.us-east-2.amazonaws.com/12172023_01_loop.mp3",
+			"src": "12172023_01_loop.mp3",
 			"title": "12.17.2023_01",
-            "bg_img": "12172023_01.jpg"
+      "bg_color": "#587082"
 		},
 
 		{
-			"src": "https://mdlloops.s3.us-east-2.amazonaws.com/12082023_loop.mp3",
+			"src": "12082023_loop.mp3",
 			"title": "12.08.2023",
-            "bg_img": "12082023.png"
+      "bg_color": "#637eaf"
 		},
 
 		{
-			"src": "https://mdlloops.s3.us-east-2.amazonaws.com/12032023_loop.mp3",
+			"src": "12032023_loop.mp3",
 			"title": "12.03.2023",
-            "bg_img": "12032023.png"
+      "bg_color": "#615a63"
 		},
 
 		{
-			"src": "https://mdlloops.s3.us-east-2.amazonaws.com/09182023_loop.mp3",
+			"src": "09182023_loop.mp3",
 			"title": "09.18.2023",
-            "bg_img": "09182023.jpg"
+      "bg_color": "#445e7b"
 		},
 
 		{
-			"src": "https://mdlloops.s3.us-east-2.amazonaws.com/09072023_loop.mp3",
+			"src": "09072023_loop.mp3",
 			"title": "09.07.2023",
-            "bg_img": "09072023.jpg"
+      "bg_color": "#637eaf"
 		},
 
 		{
-			"src": "https://mdlloops.s3.us-east-2.amazonaws.com/09022023_loop.mp3",
+			"src": "09022023_loop.mp3",
 			"title": "09.02.2023",
-            "bg_img": "09022023.jpg"
+      "bg_color": "#506689"
 		},
 
 		{
-			"src": "https://mdlloops.s3.us-east-2.amazonaws.com/12232022_loop.mp3",
+			"src": "12232022_loop.mp3",
 			"title": "12.23.2022",
-            "bg_img": "12232022.png"
+      "bg_color": "#485064"
 		}
 	]
 }
