@@ -1,8 +1,8 @@
 {% for loop in site.data.loops_cards.loops %}
-<figure style="background-image: url(/img/thumbs/{{loop.bg_img}});">
+<figure style="background-color: {{loop.bg_color}};">
     <div>
         <figcaption>{{loop.title}}</figcaption>
-        <audio class="player" controls preload="none" src="{{loop.src}}" type="audio/mp3" loop="true"></audio>
+        <audio class="player" controls preload="none" src="https://mdlloops.s3.us-east-2.amazonaws.com/{{loop.src}}" type="audio/mp3" loop="true"></audio>
     </div>
 </figure>
 {% endfor %}
