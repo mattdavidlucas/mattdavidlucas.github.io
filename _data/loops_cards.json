@@ -1,6 +1,12 @@
 {
 	"loops": [
     {
+			"src": "sp_06182025_remix.mp3",
+			"title": "06.18.2025_remix",
+      "bg_color": "#bab05f"
+		},
+
+    {
 			"src": "sp_06042025_03.mp3",
 			"title": "06.04.2025_03",
       "bg_color": "#737f68"
