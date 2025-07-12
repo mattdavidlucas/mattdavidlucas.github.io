@@ -1,21 +1,31 @@
 {
 	"loops": [
     {
+			"src": "sp_07122025.mp3",
+			"title": "im_from_around_here",
+      "bg_color": "#6c604b",
+      "bg_img": "../img/thumbs/im_from_around_here.jpg"
+		},
+
+    {
 			"src": "sp_07092025.mp3",
 			"title": "07.09.2025",
-      "bg_color": "#6c604b"
+      "bg_color": "#6c604b",
+      "bg_img": "../img/thumbs/07092025.jpg"
 		},
 
     {
 			"src": "sp_06182025_remix_v2.mp3",
 			"title": "06.18.2025_remix",
-      "bg_color": "#bab05f"
+      "bg_color": "#bab05f",
+      "bg_img": "../img/thumbs/06182025_remix.jpg"
 		},
 
     {
 			"src": "sp_06042025_03.mp3",
 			"title": "06.04.2025_03",
-      "bg_color": "#737f68"
+      "bg_color": "#737f68",
+      "bg_img": "../img/thumbs/06042025_03.jpg"
 		},
 
     {
@@ -32,7 +42,7 @@
 
     {
 			"src": "sp_04202025_01.mp3",
-			"title": "04.20.2025",
+			"title": "matty_gonna_make_they_head_nod",
       "bg_color": "#6f755c"
 		},
 
@@ -75,7 +85,7 @@
 
     {
 			"src": "po_01142025_02.mp3",
-			"title": "01.14.2025",
+			"title": "warning!!!!!!!",
       "bg_color": "#7ea29f"
 		},
 
