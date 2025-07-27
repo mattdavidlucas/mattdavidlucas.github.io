@@ -1,0 +1,106 @@
+{
+	"loops": [
+    {
+			"src": "sp_07262025_02.mp3",
+			"title": "euphoric_july",
+      "bg_color": "#6c604b",
+      "bg_img": "../img/thumbs/07262025_02.jpg"
+		},
+    
+    {
+			"src": "sp_07262025.mp3",
+			"title": "unit_ghost",
+      "bg_color": "#6c604b",
+      "bg_img": "../img/thumbs/unit_ghost_2.jpg"
+		},
+
+    {
+			"src": "sp_07122025.mp3",
+			"title": "im_from_around_here",
+      "bg_color": "#6c604b",
+      "bg_img": "../img/thumbs/im_from_around_here.jpg"
+		},
+
+    {
+			"src": "sp_07092025.mp3",
+			"title": "progressive_down",
+      "bg_color": "#6c604b",
+      "bg_img": "../img/thumbs/07092025.jpg"
+		},
+
+    {
+			"src": "sp_06182025_remix_v2.mp3",
+			"title": "your_central_echo",
+      "bg_color": "#bab05f",
+      "bg_img": "../img/thumbs/06182025_remix.jpg"
+		},
+
+    {
+			"src": "sp_06042025_03.mp3",
+			"title": "sunday_pancit_noodles",
+      "bg_color": "#737f68",
+      "bg_img": "../img/thumbs/06042025_03.jpg"
+		},
+
+    {
+			"src": "sp_06042025_02.mp3",
+			"title": "06.04.2025_02",
+      "bg_color": "#6a7460"
+		},
+
+    {
+			"src": "sp_06042025_01.mp3",
+			"title": "06.04.2025_01",
+      "bg_color": "#546055"
+		},
+
+    {
+			"src": "sp_04202025_01.mp3",
+			"title": "04.20.2025_01",
+      "bg_color": "#6f755c"
+		},
+
+    {
+			"src": "sp_04052025_01.mp3",
+			"title": "04.05.2025",
+      "bg_color": "#74705d"
+		},
+
+    {
+			"src": "sp_03082025_04.mp3",
+			"title": "03.08.2025_04",
+      "bg_color": "#6b6a5d"
+		},
+
+    {
+			"src": "sp_03082025_01.mp3",
+			"title": "03.08.2025_01",
+      "bg_color": "#848372"
+		},
+  
+    {
+			"src": "sp_02232025_04.mp3",
+			"title": "02.23.2025",
+      "bg_color": "#737c68"
+		},
+
+    {
+			"src": "po_01182025_02.mp3",
+			"title": "01.18.2025_02",
+      "bg_color": "#9eb8a0"
+		},
+    
+
+    {
+			"src": "po_01182025_01.mp3",
+			"title": "01.18.2025_01",
+      "bg_color": "#60a2a2"
+		},
+
+    {
+			"src": "po_01142025_02.mp3",
+			"title": "01.14.2025_02",
+      "bg_color": "#7ea29f"
+		}
+	]
+}
