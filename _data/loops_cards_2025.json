@@ -1,6 +1,13 @@
 {
 	"loops": [
     {
+			"src": "sp_08032025.mp3",
+			"title": "sunnyvale_apartment",
+      "bg_color": "#FFF",
+      "bg_img": "../img/thumbs/08032025.jpg"
+		},
+
+    {
 			"src": "sp_07272025.mp3",
 			"title": "sunday_pancit_remix",
       "bg_color": "#FFF",
