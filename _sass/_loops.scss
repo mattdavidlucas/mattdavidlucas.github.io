@@ -1,26 +1,16 @@
 body {
-    background-color: #f2eabc;
-    margin: 2em;
-}
-
-.container {
-    @media only screen and (min-width: 760px) {
-        width: 100%;
-    }
-}
-
-// Typography
-body {
-    font-family: 'Poppins', sans-serif;
+  background-color: #f2eabc;
 }
 
 h1, h3 {
-    font-weight: 900;
-    font-style: italic;
+  font-weight: 900;
+  font-style: italic;
 }
 
 h1 {
   font-size: 3em;
+  line-height: 2.4em;
+  padding-top: 1em;
   @media only screen and (min-width: 760px) {
     font-size: 5em;
   }
@@ -28,34 +18,23 @@ h1 {
 
 h3 {
   font-size: 2em;
-  margin: 0 0 0.4em 0;
+  margin: 1em 0 0.4em 0;
   @media only screen and (min-width: 760px) {
     font-size: 2.4em;
   }
 }
 
-header {
-    p {
-        position: relative;
-        @media only screen and (min-width: 760px) {
-            font-size: 1.4em;
-            margin-bottom: 2em;
-            width: 50%;
-        }
-
-        &::before {
-            background-color: #000;
-            content: '';
-            position: absolute;
-            width: 100px;
-            height: 4px;
-            top: -20px;
-
-            @media only screen and (min-width: 760px) {
-                top: -30px;
-            }
-        }
-    }
+.header {
+  p {
+      line-height: 1.6em;
+      margin: 1.4em 0;
+      
+      @media only screen and (min-width: 760px) {
+          font-size: 1.4em;
+          line-height: 1.4em;
+          max-width: 800px;
+      }
+  }
 }
 
 figcaption {

@@ -43,3 +43,111 @@ img {
   height: auto;
   width: 100%;
 }
+
+body {font-family: 'Poppins', sans-serif;}
+
+.home {
+  background-color: #000;
+}
+
+header {
+  background-color: white;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo {
+  max-width: 170px;
+  width: 100%;
+}
+
+// Nav
+nav {
+  background-color: white;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  font-size: 1.3em;
+  font-weight: 700;
+  left: 0;
+  padding: 2rem;
+  position: fixed;
+  top: 60px;
+
+  li {
+    margin-bottom: 1em;
+
+    &:last-child { margin-bottom: 0; }
+  }
+
+  a {
+    color: black;
+    position: relative;
+    text-decoration: none;
+
+    &:visited {
+      @extend a;
+    }
+
+    &::before {
+      border-radius: 90px;
+      content: '';
+      display: inline-block;
+      position: relative;
+      width: 20px;
+      height: 20px;
+      bottom: -2px;
+      left: 0;
+      margin-right: 0.4em;
+    }
+
+    &:hover {
+      &::before {
+        transition: transform .3s;
+        transform: translateY(-.75em);
+      }
+    }
+  }
+
+  .loops_nav {
+    &::before {
+      background-color: #f2eabc;
+    }
+  }
+
+  .old_drawings_nav {
+    &::before {
+      background-color: #abc6b4;
+    }
+  }
+}
+
+.container {
+  padding: 2em;
+  @media only screen and (min-width: 760px) {
+    width: 100%;
+  }
+}
+
+.current-sketch {
+  background-image: url('/img/homepage-drawings/ml-homepage-drawing-09062024.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  @media only screen and (min-width: 860px) {
+    height: auto;
+  }
+
+  .full { 
+    display: none; 
+    @media only screen and (min-width: 860px) {
+      display: block;
+    }
+  }
+}
+
+.site-footer {
+  background-color: #000;
+  p {color: #FFF;}
+}

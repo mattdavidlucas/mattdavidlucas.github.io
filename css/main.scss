@@ -1,12 +1,6 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Global
 ---
 @charset "utf-8";
 
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import 
-  "mixins", 
-  "base", 
-  "home"
-;
+@import "base";
