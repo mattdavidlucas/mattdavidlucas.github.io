@@ -1,62 +1,35 @@
 body {
-    background-color: #ABC6B4;
-    margin: 0;
-    padding: 1em;
-
-    @media only screen and (min-width: 760px) {
-      padding: 2em;
-    }
-}
-
-.container {
-  width: 95%;
-}
-
-// Typography
-body {
-    font-family: 'Poppins', sans-serif;
+  background-color: #ABC6B4;
 }
 
 h1 {
-    font-weight: 900;
-    font-size: 3em;
-    font-style: italic;
-    margin-bottom: 1em;
-    position: relative;
-    @media only screen and (min-width: 760px) {
-        font-size: 5em;
-    }
+  font-weight: 900;
+  font-style: italic;
+}
 
-    &::after {
-      background-color: #000;
-      content: '';
-      position: absolute;
-      width: 100px;
-      height: 4px;
-      left: 0;
-      top: 130%;
-
-      @media only screen and (min-width: 760px) {
-        top: 150%;
-      }
+h1 {
+  font-size: 3em;
+  line-height: 2.4em;
+  padding-top: 1em;
+  @media only screen and (min-width: 760px) {
+    font-size: 5em;
   }
 }
 
-header {
+.header {
   p {
-      line-height: 1.2em;
-      margin-bottom: 1em;
+      line-height: 1.6em;
+      margin: 1.4em 0;
       
       @media only screen and (min-width: 760px) {
           font-size: 1.4em;
           line-height: 1.4em;
           max-width: 800px;
-          width: 100%;
       }
   }
 }
 
-.old-drawings, .gallery {
+.gallery {
   margin-top: 2em;
 
   @media only screen and (min-width: 760px) {
@@ -76,13 +49,15 @@ figure {
   }
 }
 
-img {
-  background-color: white;
-  display: block;
-  max-width: 650px;
-  outline: 1px solid black;
-  padding: 1em;
-  width: 100%;
+.gallery {
+  img {
+    background-color: white;
+    display: block;
+    max-width: 650px;
+    outline: 1px solid black;
+    padding: 1em;
+    width: 100%;
+  }  
 }
 
 figcaption {
