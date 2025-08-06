@@ -1,33 +1,16 @@
-var site = {
+// Volume controls on 'loops' page
+let audioElements = document.querySelectorAll("audio");
 
-	init: function() {
-		this.hideSingle();
-		this.removeWork();
-	},
-
-	hideSingle: function() {
-		var portfolioClass = $("#portfolio_single").attr('class');
-
-		$('#portfolio article').each(function() {
-			var portfolioId = $(this).attr('id');
-
-			if ( portfolioId === portfolioClass ) {
-				var removeThis = '#' + portfolioId;
-				$(removeThis).remove();
-			}
-		});
-	},
-
-	removeWork: function() {
-		var portfolioItems = $('.portfolio_card').length;
-
-		if ( portfolioItems === 0 ) {
-			$('#portfolio').hide();
-		}
-	}
-	// End methods
-}
-
-$(function() {
-	site.init();
+audioElements.forEach(function(audio) {
+  audio.volume = 0.5;
 });
+
+document.addEventListener('play', function(e) {
+    var loops = document.getElementsByTagName('audio');
+
+    for (var i = 0, len = loops.length; i < len; i++) {
+        if (loops[i] != e.target) {
+            loops[i].pause();
+        }
+    }
+}, true);
