@@ -52,80 +52,57 @@ body {font-family: 'Poppins', sans-serif;}
 
 header {
   background-color: white;
-  padding: 1rem 2rem;
   position: fixed;
   width: 100%;
   z-index: 1;
 }
 
+header > a {
+  display: block;
+  float: left;
+  padding: 1em;
+  
+  @media only screen and (min-width: 760px) {
+    padding: 1em 2em;
+  }
+}
+
 .logo {
-  max-width: 170px;
+  max-width: 150px;
   width: 100%;
+  @media only screen and (min-width: 760px) {
+    max-width: 170px;
+  }
 }
 
 // Nav
 nav {
-  background-color: white;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
-  font-size: 1.3em;
-  font-weight: 700;
-  left: 0;
-  padding: 2rem;
-  position: fixed;
-  top: 60px;
-
-  li {
-    margin-bottom: 1em;
-
-    &:last-child { margin-bottom: 0; }
-  }
+  float: right;
 
   a {
-    color: black;
-    position: relative;
+    display: block;
+    float: left;
+    height: 60px;
+    width: 60px;
     text-decoration: none;
-
     &:visited {
       @extend a;
     }
-
-    &::before {
-      border-radius: 90px;
-      content: '';
-      display: inline-block;
-      position: relative;
-      width: 20px;
-      height: 20px;
-      bottom: -2px;
-      left: 0;
-      margin-right: 0.4em;
-    }
-
     &:hover {
-      &::before {
-        transition: transform .3s;
-        transform: translateY(-.75em);
-      }
-    }
-  }
-
-  .loops_nav {
-    &::before {
-      background-color: #f2eabc;
-    }
-  }
-
-  .old_drawings_nav {
-    &::before {
-      background-color: #abc6b4;
+      transition: transform .3s;
+      transform: translateX(-.75em);
     }
   }
 }
 
+.loops_nav { background-color: #f2eabc; }
+
+.old_drawings_nav { background-color: #abc6b4;}
+
 .container {
-  padding: 2em;
+  padding: 2em 1em;
   @media only screen and (min-width: 760px) {
+    padding: 2em;
     width: 100%;
   }
 }
