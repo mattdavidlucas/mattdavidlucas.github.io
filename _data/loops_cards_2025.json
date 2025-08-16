@@ -1,6 +1,13 @@
 {
 	"loops": [
     {
+			"src": "sp_08162025.mp3",
+			"title": "study",
+      "bg_color": "#FFF",
+      "bg_img": "../img/thumbs/08162025.jpg"
+		},
+
+    {
 			"src": "sp_08032025.mp3",
 			"title": "sunnyvale_apartment",
       "bg_color": "#FFF",
