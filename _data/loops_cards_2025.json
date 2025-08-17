@@ -1,6 +1,13 @@
 {
 	"loops": [
     {
+			"src": "sp_08172025.mp3",
+			"title": "la sorencia (la sonorense)",
+      "bg_color": "#FFF",
+      "bg_img": "../img/thumbs/08172025.jpg"
+		},
+
+    {
 			"src": "sp_08162025.mp3",
 			"title": "study",
       "bg_color": "#FFF",
@@ -65,14 +72,15 @@
 
     {
 			"src": "sp_06042025_02.mp3",
-			"title": "06.04.2025_02",
-      "bg_color": "#6a7460"
+			"title": "long walk down blossom hill road",
+      "bg_color": "#FFF",
+      "bg_img": "../img/thumbs/06042025_02.jpg"
 		},
 
     {
 			"src": "sp_06042025_01.mp3",
 			"title": "06.04.2025_01",
-      "bg_color": "#546055"
+      "bg_color": "#FFF"
 		},
 
     {
