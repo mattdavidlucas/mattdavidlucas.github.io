@@ -1,6 +1,13 @@
 {
 	"loops": [
     {
+			"src": "sp_09142025_01.mp3",
+			"title": "syndicate, lost",
+      "bg_color": "#FFF",
+      "bg_img": "../img/thumbs/09142025.jpg"
+		},
+
+    {
 			"src": "sp_08172025.mp3",
 			"title": "la sorencia (la sonorense)",
       "bg_color": "#FFF",
