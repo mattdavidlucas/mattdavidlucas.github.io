@@ -1,0 +1,181 @@
+:root {
+  --brand: #209D50;
+  --brand-dark: #1f8646;
+  --surface: #fff;
+  --page-bg: #E1DFD9;
+  --content-width: 900px;
+}
+
+html {
+  background-color: var(--page-bg);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-family: "Gelasio", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.site-intro h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1.8rem;
+}
+
+h2 {
+  margin-top: 3rem;
+}
+
+section h2:first-child {
+  margin-top: 1.4rem;
+}
+
+.site-case-studies ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-case-studies li {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--brand);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 2px dashed var(--brand);
+  outline-offset: 2px;
+}
+
+header, section {
+  background-color: var(--surface);
+  margin: 1rem;
+  padding: 1.4rem;
+}
+
+small {
+  color: var(--brand);
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+img {
+  border: 0;
+  display: block;
+  height: auto;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.site-nav, footer {
+  margin: 0;
+  max-width: 100%;
+}
+
+.site-nav a {
+  color: black;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  text-decoration: none;
+}
+
+.site-nav a:focus {
+  outline: 2px dashed black;
+  outline-offset: 2px;
+}
+
+.site-nav, nav ul {
+  display: flex;
+}
+
+.site-nav p, .site-nav nav {
+  width: 50%;
+}
+
+.site-nav p {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+li img {
+  margin: 0;
+  max-width: 20px;
+  padding-left: 1rem;
+}
+
+footer {
+  background-color: var(--surface);
+  padding: 2rem;
+}
+
+footer .site-nav {
+  padding: 0;
+}
+
+.cta {
+  margin-bottom: 3rem;
+}
+
+.cta > h2 {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.cta a {
+  background-color: var(--brand);
+  color: var(--surface);
+  display: block;
+  font-weight: 500;
+  text-align: center;
+  padding: 1rem;
+  max-width: 200px;
+}
+
+.cta a:hover {
+  background-color: var(--brand-dark);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  header, section {
+    margin: 2rem;
+    padding: 2rem;
+  }
+
+  article header, article section {
+    max-width: var(--content-width);
+  }
+
+  .site-intro h1 {
+    font-size: 1.8em;
+    width: 60%;
+  }
+
+  .cta {
+    max-width: 700px;
+  }
+}
