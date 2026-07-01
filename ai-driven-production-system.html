@@ -1,0 +1,127 @@
+---
+layout: default
+title: Building an AI-Driven Email Production System (and Handing It to the Team)
+---
+
+<article>
+<header>
+<small>Use Case</small>
+<h1>Building an AI-Driven Email Production System (and Handing It to the Team)</h1>
+<p>2025 – 2026</p>
+</header>
+
+<section>
+<h2>Intro</h2>
+
+<p>Here's a fact about my role at Credit Karma: producing a single marketing email was labor intensive, manual, and built for developers, not marketers.</p>
+
+<p>Emails were built in Handlebars.js and compiled through a Node-based build, with everything version-controlled in a GitHub repo that lived outside our marketing platform. Creating a new email meant branching in Git, hand-formatting campaign copy into individual Handlebars and JSON files, running a build command in Terminal, previewing in Chrome to catch broken links and rendering issues, fixing what broke, re-running the build, and finally sending the email into Litmus to kick off a review. Solid engineering practice. But it meant every routine email dragged someone (a marketer, or me on their behalf) through Terminal, Git, and a pull request just to get to the starting line.</p>
+
+<p>This is the story of how I took that process apart and rebuilt it with AI, and then handed the result to the people who needed it.</p>
+</section>
+
+<section>
+<h2>A head start on the mindset</h2>
+
+<p>Long before AI showed up, I had the instinct for this. Early in my career, an engineer mentored me on the importance of shell scripting and a well-built <code>.bash_profile</code> (to him, a good bash profile was a crowning achievement, a file to brag about; his idea of fun was converting Windows laptops to Linux machines). So when I landed in this manual workflow, my first move was to script the repetitive parts away. Those early scripts were basic, but they saved real time, and they set the pattern for everything that came after: find the repetitive part, automate it, and get the attention back on the work that actually matters.</p>
+
+<p>Then AI was made available to all employees, and I suddenly had a lot more to work with. I was skeptical at first. I started with our in-house GenAI platform, which was kind of good, and then we got access to Google Gemini Enterprise, which is where it started getting real.</p>
+
+<p>What follows is the progression, broken into levels, sort of like a video game. Each level made the system more capable, and less dependent on me.</p>
+</section>
+
+<img src="" alt="">
+
+<section>
+<h2>Level 1: Google Gemini Enterprise</h2>
+
+<p>To kick the tires, I started basic: I used Gemini only for creating VS Code snippets (this was pre-Cursor). Building snippets used to be tedious. I'd actually made a snippet to create snippets, but with Gemini I built a Gem instead, and all I had to do was paste in a block of code and it would format it and hand back a finished snippet. I ended up creating snippets for every piece of template code in our repo, about 200 in total, and I did the whole thing (I think) in an afternoon. The snippets, paired with my shell scripts, cleared a lot of friction and gave me a real sense of flow.</p>
+
+<p>But I wanted to see if I could do more, so I started working with Gemini's Coding Partner Gem on my existing shell scripts. I gave it what I had, outlined my ideal workflow, and let it go. What came back was pretty good (probably 80% of the way there), so I ran several rounds of iteration and a lot of testing against my real workflow.</p>
+
+<p>The final result was a game changer at that pre-Cursor, pre-Claude Code level. My flow was mostly running shell scripts to format copy and reaching for snippets when something needed a custom layout. Here's what I built:</p>
+
+<p><strong><a href="https://github.com/mattdavidlucas/ai-for-email-templates/blob/main/level-01/gostarter.sh" target="_blank">gostarter.sh</a></strong>: Generates a net-new marketing email, with optional push message. It clones a standard boilerplate template and replaces placeholder campaign metadata with whatever I specified.</p>
+
+<p><strong><a href="https://github.com/mattdavidlucas/ai-for-email-templates/blob/main/level-01/goclone.sh" target="_blank">goclone.sh</a></strong>: Clones an existing marketing email or push message, and replaces the old campaign metadata with the new.</p>
+
+<p><strong><a href="https://github.com/mattdavidlucas/ai-for-email-templates/blob/main/level-01/gosplit.sh" target="_blank">gosplit.sh</a></strong>: Splits a block of copy into individual, numbered <code>.hbs</code> files, used for creative experiments.</p>
+
+<p><strong><a href="https://github.com/mattdavidlucas/ai-for-email-templates/blob/main/level-01/goreplace.sh" target="_blank">goreplace.sh</a></strong>: Finds and replaces text across a campaign directory. Fairly trivial (an IDE does the same thing), but surprisingly handy at times.</p>
+
+<p><strong><a href="https://github.com/mattdavidlucas/ai-for-email-templates/blob/main/level-01/litmus-qa.sh" target="_blank">litmus-qa.sh</a></strong>: The one I truly loved. It uses the Mailgun <code>messages</code> endpoint to send the built HTML to Litmus, which simultaneously creates a Litmus test and posts it to Slack through the Litmus/Slack integration. Finally, I didn't have to leave my IDE to kick off a test.</p>
+
+<p>This was the new workflow: shell scripts, snippets, and a bash profile I could be proud of. Then a couple of engineering colleagues told me to check out Cursor.</p>
+</section>
+
+<img src="" alt="">
+
+<section>
+<h2>Level 2: Cursor</h2>
+
+<p>Cursor changed how I worked, and how I thought about the work. This was before agent skills had really landed, so the features I leaned on were:</p>
+
+<ul>
+  <li><strong>Tab:</strong> After a few weeks it could anticipate what I'd write next, which basically retired my snippets.</li>
+  <li><strong>Rules:</strong> A ruleset scoped to the specific work I was doing.</li>
+  <li><strong>Commands:</strong> A precursor to agent skills that ran as slash commands for specific tasks.</li>
+  <li><strong>Plan Mode:</strong> What I used for large bulk audits across templates, and for coding new components.</li>
+  <li><strong>MCP:</strong> When Figma released their MCP for Cursor, I connected it immediately. Paired with Plan Mode, the time savings were significant. Examples of the generated code are here.</li>
+</ul>
+
+<h3>Rules</h3>
+
+<p><strong><a href="https://github.com/mattdavidlucas/ai-for-email-templates/blob/main/level-02/rule-marketing_template_best_practices.md" target="_blank">rule-marketing_template_best_practices.md</a></strong>: My rule for marketing emails; a high-level set of do's and don'ts.</p>
+
+<h3>Commands</h3>
+
+<p><strong><a href="https://github.com/mattdavidlucas/ai-for-email-templates/blob/main/level-02/command-cleanup_html.md" target="_blank">command-cleanup_html.md</a></strong>, <strong><a href="https://github.com/mattdavidlucas/ai-for-email-templates/blob/main/level-02/command-cleanup_text.md" target="_blank">command-cleanup_text.md</a></strong>, <strong><a href="https://github.com/mattdavidlucas/ai-for-email-templates/blob/main/level-02/command-json_array.md" target="_blank">command-json_array.md</a></strong>: Utility commands for formatting. Over time, Tab made most of them redundant, but they were handy for one-off jobs.</p>
+
+<p><strong><a href="https://github.com/mattdavidlucas/ai-for-email-templates/blob/main/level-02/command-parity_test.md">command-parity_test.md</a></strong>: Ran our build command inside an interactive Terminal in Cursor's chat, so when the build threw errors I could work through them with the agent right there.</p>
+
+<p><strong><a href="https://github.com/mattdavidlucas/ai-for-email-templates/blob/main/level-02/command-qa.md" target="_blank">command-qa.md</a></strong>: A simple but effective command for QA'ing marketing emails.</p>
+
+<p><strong><a href="https://github.com/mattdavidlucas/ai-for-email-templates/blob/main/level-02/command-template_builder.md" target="_blank">command-template_builder.md</a></strong>: The star of the show, and the one that yielded the best results. After a lot of iteration and a few failed attempts, this was the workflow that could ingest a Google Doc, design specs, and campaign metadata, then output fully coded marketing emails (in our required Handlebars.js and JSON formats) with 90 to 95% accuracy. All of a sudden I was generating emails and push messages in under 20 minutes, and for something simple, in 8 minutes or less.</p>
+
+<p><strong>One important note about this work:</strong> the template builder was a collaborative effort, and the way it came together says something. A colleague had taken the first swing, building a version as a Gemini Gem and vibe coding a React app with a front-end UI; ambitious, but it didn't deliver consistent, usable results. A data engineer built another version for Cursor, but since he wasn't close to the actual workflow or the daily pain points of email production, it didn't produce reliable results either. When I took my turn, the difference wasn't engineering horsepower. It was that I brought the real workflow, the standards, and every pain point I'd hit personally, and that's what made it work.</p>
+</section>
+
+<img src="" alt="">
+
+<section>
+<h2>Level 3: Claude Code and Agent Skills</h2>
+
+<p>After using Cursor (and falling for it) for a few months, I got access to Claude Code right as agent skills were taking off, so I started digging into both. Reading the specs, it was clear agent skills were a lot more powerful than Cursor commands, and that Claude Code was powerful well beyond converting my existing work.</p>
+
+<p>I used it for two things at once. First, to draft, iterate, and convert my Cursor commands into proper agent skills, each one carrying much more context than the commands had. Second, for actual engineering: I used it to quickly build an <strong><a href="https://github.com/mattdavidlucas/ai-for-email-templates/tree/main/level-03/ck-airtable-mcp" target="_blank">Airtable MCP</a></strong> (we tracked email template requests in Airtable) so I could pull request details directly into an agent chat. Pair that with my new skills, a Google Drive MCP, and Figma's MCP, and all of a sudden the workflow was agentic.</p>
+
+<p>Here's what I built:</p>
+
+<p><strong><a href="https://github.com/mattdavidlucas/ai-for-email-templates/blob/main/level-03/template-builder/SKILL.md" target="_blank">template-builder</a></strong>: The agent-skill version of my Cursor <code>template_builder</code> command, but with far more context. Using references and scripts directories, I gave the agent as much understanding of our build process and standards as I could, so it could generate highly accurate emails and push messages.</p>
+
+<p><strong><a href="https://github.com/mattdavidlucas/ai-for-email-templates/blob/main/level-03/template-qa/SKILL.md" target="_blank">template-QA</a></strong>: The skill version of my <code>qa</code> command, again with much more background on what it actually means to QA a marketing email against a high bar for customer experience.</p>
+
+<p><strong><a href="https://github.com/mattdavidlucas/ai-for-email-templates/blob/main/level-03/run-parity/SKILL.md" target="_blank">run-parity</a></strong>: A simple skill to run our build command.</p>
+
+<p><strong><a href="https://github.com/mattdavidlucas/ai-for-email-templates/blob/main/level-03/email-design-to-template/SKILL.md" target="_blank">email-design-to-template</a></strong>: This was supposed to be the crowning achievement (famous last words). It was never finished. The idea was to translate our Figma email design system into Markdown and image assets, pair that with repo documentation mapping components to their Figma counterparts, and let a user drop a PNG of an exported design into an agent chat and ask it to build the email. Early testing was extremely promising. I ran out of runway when I left.</p>
+
+<p>The part that mattered most wasn't the tooling, though. It was who started using it. Before I left, a non-technical marketer running an early version of the skills posted this in Slack:</p>
+
+<blockquote><p>&ldquo;Just want to give a shoutout and thank you...for developing these skills! It built 4 net new emails using <code>template-builder</code> in 10 minutes which would normally take at least a couple of hours of manual work. This will help so much with velocity.&rdquo;</p></blockquote>
+
+<p>That was a feather in my cap. The whole point of building the machine was to put it in someone else's hands, and here was proof it worked for someone who'd never touch Terminal.</p>
+</section>
+
+<section>
+<h2>What I take from it</h2>
+
+<p>By the time I left, builds that used to take 60 to 90 minutes were running in around 18 to 20, a 70% reduction, with no engineering support required. But the build time isn't the part I'm proudest of.</p>
+
+<p>For years I'd struggled to get engineering attention for better email tooling; it was never anyone's priority but mine. AI changed that equation. It let me build the tooling I'd been asking for myself, and once it worked, that same work finally caught the engineering team's attention, the support I could never get before. More importantly, I could share it. I went from automating my own workflow to handing other teams something they could run without me, and without code.</p>
+
+<p>That's the throughline of this whole project, and honestly most of my work: find the bottleneck, build the system that removes it, and teach the people around me to run on it.</p>
+</section>
+
+</article>
+
+{% include footer.html %}

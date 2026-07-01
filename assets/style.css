@@ -4,6 +4,8 @@
   --surface: #fff;
   --page-bg: #E1DFD9;
   --content-width: 900px;
+  --font-body: "Poppins", sans-serif;
+  --font-display: "Gelasio", serif;
 }
 
 html {
@@ -11,7 +13,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-body);
   font-weight: 400;
   font-style: normal;
   margin: 0;
@@ -19,7 +21,7 @@ body {
 }
 
 h1, h2 {
-  font-family: "Gelasio", serif;
+  font-family: var(--font-display);
   font-weight: 500;
   font-style: normal;
 }
@@ -43,6 +45,28 @@ section h2:first-child {
   padding: 0;
 }
 
+blockquote {
+  border-left: 5px solid var(--page-bg);
+  margin: 2rem 0 2rem;
+  padding-left: 2rem;
+}
+
+blockquote p {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1.4rem;
+}
+
+code {
+  background-color: #e8e8e8;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.2rem;
+}
+
 .site-case-studies li {
   margin-bottom: 1rem;
 }
@@ -61,8 +85,11 @@ a:focus {
   outline-offset: 2px;
 }
 
-header, section {
+header, section, footer {
   background-color: var(--surface);
+}
+
+header, section {
   margin: 1rem;
   padding: 1.4rem;
 }
@@ -85,12 +112,10 @@ img {
 
 .site-nav, footer {
   margin: 0;
-  max-width: 100%;
 }
 
 .site-nav a {
   color: black;
-  text-decoration: none;
 }
 
 .site-nav a:hover {
@@ -116,7 +141,7 @@ img {
 
 nav ul {
   list-style-type: none;
-  float: right;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
 }
@@ -128,7 +153,6 @@ li img {
 }
 
 footer {
-  background-color: var(--surface);
   padding: 2rem;
 }
 
