@@ -8,7 +8,25 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/style.css?v={{ 'now' | date: '%Y%m%d%H%M' }}">
+  {% if page.image %}
+  <meta property="og:site_name" content="{{ site.title }}"/>
+  <meta property="og:title" content="{{ page.title }} — {{ site.title }}"/>
+  <meta property="og:url" content="{{ page.url | absolute_url }}"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="{{ page.image | absolute_url }}"/>
+  <meta property="og:image:width" content="1500"/>
+  <meta property="og:image:height" content="785"/>
+  <meta itemprop="name" content="{{ page.title }} — {{ site.title }}"/>
+  <meta itemprop="url" content="{{ page.url | absolute_url }}"/>
+  <meta itemprop="thumbnailUrl" content="{{ page.image | absolute_url }}"/>
+  <link rel="image_src" href="{{ page.image | absolute_url }}" />
+  <meta itemprop="image" content="{{ page.image | absolute_url }}"/>
+  <meta name="twitter:title" content="{{ page.title }} — {{ site.title }}"/>
+  <meta name="twitter:image" content="{{ page.image | absolute_url }}"/>
+  <meta name="twitter:url" content="{{ page.url | absolute_url }}"/>
+  <meta name="twitter:card" content="summary"/>
+  {% endif %}
 </head>
 
 <body>

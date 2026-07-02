@@ -1,12 +1,13 @@
 ---
 layout: default
-title: Building an AI-Driven Email Production System (and Handing It to the Team)
+title: Creating an AI-Driven Email Production System (and Handing It to the Team)
+image: /assets/images/social/ai-email-homepage-thumbnail.png
 ---
 
 <article>
 <header>
 <small>Use Case</small>
-<h1>Building an AI-Driven Email Production System (and Handing It to the Team)</h1>
+<h1>Creating an AI-Driven Email Production System (and Handing It to the Team)</h1>
 <p>2025 – 2026</p>
 </header>
 
@@ -30,8 +31,6 @@ title: Building an AI-Driven Email Production System (and Handing It to the Team
 <p>What follows is the progression, broken into levels, sort of like a video game. Each level made the system more capable, and less dependent on me.</p>
 </section>
 
-<img src="" alt="">
-
 <section>
 <h2>Level 1: Google Gemini Enterprise</h2>
 
@@ -41,7 +40,7 @@ title: Building an AI-Driven Email Production System (and Handing It to the Team
 
 <p>The final result was a game changer at that pre-Cursor, pre-Claude Code level. My flow was mostly running shell scripts to format copy and reaching for snippets when something needed a custom layout. Here's what I built:</p>
 
-<p><strong><a href="https://github.com/mattdavidlucas/ai-for-email-templates/blob/main/level-01/gostarter.sh" target="_blank">gostarter.sh</a></strong>: Generates a net-new marketing email, with optional push message. It clones a standard boilerplate template and replaces placeholder campaign metadata with whatever I specified.</p>
+<p><strong><a href="https://github.com/mattdavidlucas/ai-for-email-templates/blob/main/level-01/gostarter.sh" target="_blank">gostarter.sh</a></strong>: Generates a net new marketing email, with optional push message. It clones a standard boilerplate template and replaces placeholder campaign metadata with whatever I specified.</p>
 
 <p><strong><a href="https://github.com/mattdavidlucas/ai-for-email-templates/blob/main/level-01/goclone.sh" target="_blank">goclone.sh</a></strong>: Clones an existing marketing email or push message, and replaces the old campaign metadata with the new.</p>
 
@@ -54,8 +53,6 @@ title: Building an AI-Driven Email Production System (and Handing It to the Team
 <p>This was the new workflow: shell scripts, snippets, and a bash profile I could be proud of. Then a couple of engineering colleagues told me to check out Cursor.</p>
 </section>
 
-<img src="" alt="">
-
 <section>
 <h2>Level 2: Cursor</h2>
 
@@ -66,7 +63,7 @@ title: Building an AI-Driven Email Production System (and Handing It to the Team
   <li><strong>Rules:</strong> A ruleset scoped to the specific work I was doing.</li>
   <li><strong>Commands:</strong> A precursor to agent skills that ran as slash commands for specific tasks.</li>
   <li><strong>Plan Mode:</strong> What I used for large bulk audits across templates, and for coding new components.</li>
-  <li><strong>MCP:</strong> When Figma released their MCP for Cursor, I connected it immediately. Paired with Plan Mode, the time savings were significant. Examples of the generated code are here.</li>
+  <li><strong>MCP:</strong> When Figma released their MCP for Cursor, I connected it immediately. Paired with Plan Mode, the time savings were significant. Examples of the generated code are <a href="https://github.com/mattdavidlucas/work-samples/tree/master/ck-email-module-samples" target="_blank">here</a>.</li>
 </ul>
 
 <h3>Rules</h3>
@@ -86,14 +83,12 @@ title: Building an AI-Driven Email Production System (and Handing It to the Team
 <p><strong>One important note about this work:</strong> the template builder was a collaborative effort, and the way it came together says something. A colleague had taken the first swing, building a version as a Gemini Gem and vibe coding a React app with a front-end UI; ambitious, but it didn't deliver consistent, usable results. A data engineer built another version for Cursor, but since he wasn't close to the actual workflow or the daily pain points of email production, it didn't produce reliable results either. When I took my turn, the difference wasn't engineering horsepower. It was that I brought the real workflow, the standards, and every pain point I'd hit personally, and that's what made it work.</p>
 </section>
 
-<img src="" alt="">
-
 <section>
 <h2>Level 3: Claude Code and Agent Skills</h2>
 
 <p>After using Cursor (and falling for it) for a few months, I got access to Claude Code right as agent skills were taking off, so I started digging into both. Reading the specs, it was clear agent skills were a lot more powerful than Cursor commands, and that Claude Code was powerful well beyond converting my existing work.</p>
 
-<p>I used it for two things at once. First, to draft, iterate, and convert my Cursor commands into proper agent skills, each one carrying much more context than the commands had. Second, for actual engineering: I used it to quickly build an <strong><a href="https://github.com/mattdavidlucas/ai-for-email-templates/tree/main/level-03/ck-airtable-mcp" target="_blank">Airtable MCP</a></strong> (we tracked email template requests in Airtable) so I could pull request details directly into an agent chat. Pair that with my new skills, a Google Drive MCP, and Figma's MCP, and all of a sudden the workflow was agentic.</p>
+<p>I used it for two things at once. First, to draft, iterate, and convert my Cursor commands into proper agent skills, each one carrying much more context than the commands had. Second, for actual engineering: I used it to quickly build an <a href="https://github.com/mattdavidlucas/ai-for-email-templates/tree/main/level-03/ck-airtable-mcp" target="_blank">Airtable MCP</a> (we tracked email template requests in Airtable) so I could pull request details directly into an agent chat. Pair that with my new skills, a Google Drive MCP, and Figma's MCP, and all of a sudden the workflow was agentic.</p>
 
 <p>Here's what I built:</p>
 
